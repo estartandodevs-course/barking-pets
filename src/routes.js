@@ -1,8 +1,8 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import {
-  Home
-} from './pages';
+  Home,
+} from "./pages";
 
 export default function Routes() {
   return (

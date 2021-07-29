@@ -31,6 +31,6 @@
       "error",
       "double"
     ],
-    "import/prefer-default-export": false
+    "import/prefer-default-export": "off"
   }
 }
