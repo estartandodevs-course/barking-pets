@@ -5,14 +5,17 @@
   align-content: center;
   flex-direction: column;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  box-shadow: -2px 2px 6px 1px #00000061;
+  box-shadow: -2px 2px 6px 6px #00000061;
+  background-image: url(../../assets/img/patinha.png);
+  background-repeat: repeat-x;
+  background-color: #fbf8e0;
 
-  .header--logo {
+  .header__logo {
     width: 400px;
     height: auto;
   }
 
-  .header--titulo {
+  .header__titulo {
     font-family: "Bangers", cursive;
     font-style: normal;
     font-weight: normal;
@@ -20,5 +23,6 @@
     letter-spacing: 0.05em;
     color: #503117;
     text-shadow: 0px 0.230134px 0.230134px rgba(0, 0, 0, 0.25);
+    padding-top: 70px;
   }
 }
