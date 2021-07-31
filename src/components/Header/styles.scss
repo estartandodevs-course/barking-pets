@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  .header--image {
+    width: 201px;
+    height: 104px;
+  }
+}
+.titulo {
+  font-family: "Bangers", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 69.0403px;
+  letter-spacing: 0.05em;
+  color: #503117;
+  text-shadow: 0px 0.230134px 0.230134px rgba(0, 0, 0, 0.25);
+}
