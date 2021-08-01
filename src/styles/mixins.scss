@@ -1,0 +1,17 @@
+@mixin centerX-Y() {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin centerInColumn() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
