@@ -1,3 +1,2 @@
-import MenuHamburguer from "./Menu";
-
-export { MenuHamburguer };
+export { SearchComponent } from "./Search/SearchComponent";
+export { Menu } from "./Menu";
