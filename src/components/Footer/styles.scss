@@ -1,0 +1,14 @@
+.footer {
+  background-color: #c0afa0;
+  width: 100vw;
+  height: 108px;
+  position: absolute;
+  bottom: 0;
+
+  .footer__text {
+    font-family: "Poppins";
+    weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
