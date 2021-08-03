@@ -1,0 +1,13 @@
+.menu {
+  width: 100vw;
+  position: relative;
+
+  .menu--hamburguer {
+    width: 33px;
+    height: 30px;
+
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+}
