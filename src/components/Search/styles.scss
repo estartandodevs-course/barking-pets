@@ -1,0 +1,50 @@
+@import "../../styles/global.scss";
+
+.search {
+  width: 100%;
+  margin-top: 80px;
+  @include centerInColumn();
+
+  .search__text {
+    @include column();
+    color: #503117;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Poppins";
+    font-weight: 700;
+    text-shadow: rgba(0, 0, 0, 0.329) 1px 4px 5px;
+  }
+
+  .search__form {
+    @include centerX-Y();
+    width: 85%;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px;
+    border: rgba(211, 211, 211, 0.575) solid 0.5px;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.295);
+
+    .search__input {
+      width: 70%;
+      height: 80%;
+      border: none;
+      padding: 5px 5px;
+
+      &::-webkit-input-placeholder {
+        color: #767676;
+        font-style: bold;
+        font-family: "Poppins";
+        font-weight: 400;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .search__form--icon {
+      height: 40%;
+    }
+  }
+}
