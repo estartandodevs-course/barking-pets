@@ -1,7 +1,11 @@
 import React from "react";
-import { MenuIcon } from "../../assets/img";
-import "./MenuStyle.scss";
+import { MenuIcon } from "../../assets/icons";
+import "./styles.scss";
 
 export function Menu() {
-  return <img src={MenuIcon} alt="Menu" className="MenuHamburguer" />;
+  return (
+    <div className="menu">
+      <img src={MenuIcon} alt="Menu" className="menu--hamburguer" />
+    </div>
+  );
 }
