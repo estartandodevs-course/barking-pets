@@ -1,3 +1,4 @@
-import MenuIcon from "./menu.svg";
+import PatinhaHeader from "./patinha-header.png";
+import PetFooter from "./pet-footer.svg";
 
-export { MenuIcon };
+export { PatinhaHeader, PetFooter };
