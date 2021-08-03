@@ -1,0 +1,29 @@
+.menu-desktop {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  gap: 50px;
+  padding: 0px 0 0px 120px;
+
+  &__text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #9c612f;
+    text-decoration: none;
+    padding: 55px 0 15px 0;
+    min-width: 100px;
+    text-align: center;
+    &--not-selected:hover {
+      background-image: url(../../assets/img/patinha-hover.svg);
+      background-size: 100px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--selected {
+      background-image: url(../../assets/img/patinha-selecionado.svg);
+      background-size: 100px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
