@@ -17,7 +17,11 @@ export function MenuDesktop() {
           ? "menu-desktop__text--selected"
           : "menu-desktop__text--not-selected";
         return (
-          <a href="#" className={`menu-desktop__text ${aClass}`}>
+          <a
+            href="#"
+            key={link.title}
+            className={`menu-desktop__text ${aClass}`}
+          >
             <p>{link.title}</p>
           </a>
         );
