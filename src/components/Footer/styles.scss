@@ -1,0 +1,53 @@
+.footer {
+  background-color: #c0afa0;
+  width: 100vw;
+  height: 108px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 40px;
+  }
+
+  &__text--email {
+    font-size: 12px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  &__text--left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  &__text--right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__icons {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 22px;
+    height: auto;
+    margin: 0 10px;
+  }
+  &__icons--facebook {
+    width: 30px;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 0 10px;
+  }
+}
