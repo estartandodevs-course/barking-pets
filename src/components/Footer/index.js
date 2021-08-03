@@ -1,7 +1,6 @@
 import "./styles.scss";
-import facebook from "../../assets/icons/facebook-icon.svg";
-import instagram from "../../assets/icons/instagram-icon.svg";
-import Petlogo from "../../assets/img/Pet-Doodles.svg";
+import * as I from "../../assets/icons";
+import Petlogo from "../../assets/img/pet-footer.svg";
 
 export function Footer() {
   return (
@@ -15,12 +14,12 @@ export function Footer() {
           <p className="footer__text">Redes Sociais:</p>
           <div className="footer__container">
             <img
-              src={instagram}
+              src={I.InstagramIcon}
               alt="icone instagram"
               className="footer__icons"
             />
             <img
-              src={facebook}
+              src={I.FacebookIcon}
               alt="icone facebook"
               className="footer__icons--facebook"
             />
