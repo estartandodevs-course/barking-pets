@@ -1,59 +1,32 @@
 @import "../../styles/global.scss";
 
-.highlights__titleCard--detaque {
-  color: #643b18;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1.3rem;
-}
-
-.highlights__linha {
-  height: 0.1px;
-  width: 80%;
-  background-color: #d69558;
-  position: relative;
-  left: 100px;
-}
-
-.highlights {
-  padding: 10px 0px;
-  height: 15rem;
-  margin-left: 15px;
+.card__item {
   display: flex;
-  overflow: scroll;
-  overflow-y: hidden;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 13.5rem;
+  width: 10rem;
+  background-color: #fbf8e0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.226) 3px 5px 10px;
 
-  &::-webkit-scrollbar {
-    display: none;
+  .card__item--image {
+    width: 100%;
+    object-fit: cover;
   }
 
-  .highlights__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 13.5rem;
-    width: 100%;
-    background-color: #fbf8e0;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.226) 3px 5px 10px;
+  .card__item--footer {
+    padding: 15px 0px;
+    text-align: center;
+    @include center();
 
-    .highlights__item--image {
-      width: 10rem;
-    }
-
-    .highlights__item--footer {
-      padding: 15px 0px;
-      text-align: center;
-      @include center();
-
-      .highlights_item--footer__text {
-        color: #643b18;
-        font-size: 0.7rem;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-      }
+    .card_item--footer__text {
+      color: #643b18;
+      font-size: 0.7rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
     }
   }
 }

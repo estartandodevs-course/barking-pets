@@ -1,32 +1,11 @@
 import React from "react";
 import "./styles.scss";
 
-export default function highlights({ data }) {
+export default function Card({ id, image, children }) {
   return (
-    <>
-      <div className="">
-        <p className="highlights__titleCard--detaque">Destaques</p>
-        <div className="highlights__linha" />
-      </div>
-
-      <div className="highlights">
-        {data?.map((cardItem) => {
-          return (
-            <div key={cardItem.id} className="highlights__item">
-              <img
-                className="highlights__item--image"
-                src={cardItem.image}
-                alt=""
-              />
-              <div className="highlights__item--footer">
-                <p className="highlights_item--footer__text">
-                  {cardItem.description}
-                </p>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </>
+    <div key={id} className="card__item">
+      <img className="card__item--image" src={image} alt="" />
+      <div className="card__item--footer">{children}</div>
+    </div>
   );
 }

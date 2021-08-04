@@ -1,14 +1,26 @@
 import React from "react";
+
 import { Header, SearchComponent } from "../../components";
-import CardComponent from "../../components/highlights";
-import { card } from "../../services/api";
+import Card from "../../components/highlights";
+
+import { cards } from "../../services/api";
+import "./styles.scss";
 
 const Home = () => {
   return (
     <>
       <Header />
       <SearchComponent />
-      <CardComponent data={card} />
+      <p>Destaques</p>
+      <div className="carrousel">
+        {cards.map(({ id, image, description }) => {
+          return (
+            <Card id={id} image={image}>
+              <p>{description}</p>
+            </Card>
+          );
+        })}
+      </div>
     </>
   );
 };
