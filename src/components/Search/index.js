@@ -9,6 +9,7 @@ export const Search = () => {
     <div className="search">
       <div className="search__text">
         <p>Seja bem vindo, </p>
+
         <p> O que vamos fazer hoje?</p>
       </div>
 
