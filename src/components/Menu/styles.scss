@@ -1,7 +1,11 @@
 .menu {
-  width: 100vw;
+  width: 100%;
   position: relative;
+  display: block;
 
+  @media (min-width: 768px) {
+    display: none;
+  }
   .menu--hamburguer {
     width: 33px;
     height: 30px;
