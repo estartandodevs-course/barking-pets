@@ -6,6 +6,7 @@ export function MenuDesktop() {
     { title: "Home", path: "/" },
     { title: "Sobre nós", path: "/about" },
     { title: "Dicas", path: "/dicas" },
+    { title: "Cadastre-se", path: "/entrar" },
     { title: "Entrar", path: "/entrar" },
   ];
   const pathname = "/";
