@@ -1,6 +1,6 @@
 import * as I from "../assets/img";
 
-export const card = [
+export const cards = [
   {
     id: 1,
     description:
