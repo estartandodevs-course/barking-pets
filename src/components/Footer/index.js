@@ -25,7 +25,11 @@ export function Footer() {
             />
           </div>
         </div>
-        <img src={Petlogo} alt="icone petlogo" />
+        <img
+          className="footer__icons--petlogo"
+          src={Petlogo}
+          alt="icone petlogo"
+        />
       </footer>
     </>
   );
