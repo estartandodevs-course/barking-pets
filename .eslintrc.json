@@ -13,6 +13,7 @@
   },
   "plugins": ["react"],
   "rules": {
+    "object-curly-newline": 0,
     "react/jsx-filename-extension": [
       1,
       {
