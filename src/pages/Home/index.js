@@ -1,7 +1,7 @@
 import React from "react";
 import { patinhaBlack, ponto } from "../../assets/icons";
 
-import { Card, Header, SearchComponent } from "../../components";
+import { Card } from "../../components";
 
 import { cards, hoteis } from "../../services/api";
 import "./styles.scss";
@@ -9,8 +9,6 @@ import "./styles.scss";
 const Home = () => {
   return (
     <>
-      <Header />
-      <SearchComponent />
       <section id="cards-hoteis">
         <div className="title__card-section">
           <p className="title__card-section--text">Hotéis mais avaliados</p>
