@@ -10,15 +10,14 @@ const Home = () => {
   return (
     <>
       <section id="cards-hoteis">
-        <div className="title__card-section">
-          <p className="title__card-section--text">Hotéis mais avaliados</p>
-          <div className="title__card-section--linha" />
+        <div className="title-section">
+          <p className="title-section__text">Hotéis mais avaliados</p>
+          <div className="title-section--line" />
         </div>
         <div className="card-section">
           {hoteis.map(({ id, name, image, nota }) => {
             return (
-              <Card key={id} className="home__card--hotel">
-                <img src={image} alt="cachorro" className="home__card--image" />
+              <Card key={id} image={image} containerClass="home__card">
                 <div className="home__card__footer__hotel">
                   <p className="home__card__footer__hotel--text">
                     {name}
@@ -53,8 +52,7 @@ const Home = () => {
         <div className="card-section">
           {cards.map(({ id, image, description }) => {
             return (
-              <Card key={id} className="home__card">
-                <img src={image} alt="cachorro" className="home__card--image" />
+              <Card key={id} image={image} containerClass="home__card">
                 <div className="home__card__footer">
                   <p className="home__card__footer--text">{description}</p>
                 </div>
