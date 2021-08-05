@@ -1,6 +1,113 @@
-.carrousel {
+@import "../../styles/global.scss";
+
+.home__card--hotel {
+  @include centerInColumn();
+  border-radius: 20px 0px 12px 15px;
+  background-color: #fbf8e0;
+  box-shadow: rgba(0, 0, 0, 0.226) 3px 5px 10px;
+
+  .home__card__footer__hotel {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: 50px;
+
+    .home__card__footer__hotel--text {
+      display: flex;
+      flex-direction: column;
+      padding-left: 2px;
+      text-align: left;
+      color: #000000;
+      font-size: 0.8rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+
+      .home__card__footer__hotel--text--link {
+        color: #643b18dc;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        text-decoration: none;
+      }
+    }
+
+    .home__card__footer__hotel--patinha-black-and-nota {
+      display: flex;
+      align-items: center;
+      height: 15px;
+      color: #000000;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 0.8rem;
+      gap: 2px;
+    }
+  }
+}
+
+.title__card-section {
   display: flex;
-  overflow-x: scroll;
-  padding: 10px 0;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+
+  .title__card-section--text {
+    color: #643b18;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin: 3px 0px;
+  }
+
+  .title__card-section--linha {
+    display: flex;
+    flex-direction: column;
+    height: 0.5px;
+    width: 100%;
+    background-color: #d6955877;
+  }
+}
+
+.card-section {
+  height: 15rem;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+  position: static;
+  gap: 20px;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 10px; /* width of the entire scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: trasnparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(66, 66, 66, 0.164);
+    border-radius: 20px;
+    border: 3px solid rgba(255, 166, 0, 0);
+  }
+
+  .home__card {
+    @include centerInColumn();
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.226) 3px 5px 10px;
+    background-color: #fbf8e0;
+  }
+
+  .home__card__footer {
+    height: 60px;
+
+    .home__card__footer--text {
+      @include centerX-Y;
+      text-align: center;
+      color: #643b18;
+      font-size: 0.7rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+    }
+  }
 }
