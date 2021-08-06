@@ -11,29 +11,28 @@ const Home = () => {
     <>
       <section id="cards-hoteis">
         <div className="title-section">
-          <p className="title-section__text">Hotéis mais avaliados</p>
+          <p className="title-section--text">Hotéis mais avaliados</p>
           <div className="title-section--line" />
         </div>
+
         <div className="card-section">
           {hoteis.map(({ id, name, image, nota }) => {
             return (
-              <Card key={id} image={image} containerClass="home__card">
-                <div className="home__card__footer__hotel">
-                  <p className="home__card__footer__hotel--text">
+              <Card
+                key={id}
+                image={image}
+                containerClass="card"
+                classImages="card__image--hoteis"
+              >
+                <div className="card__footer">
+                  <p className="card__footer--text">
                     {name}
-                    <a
-                      href="top"
-                      className="home__card__footer__hotel--text--link"
-                    >
+                    <a href="top" className="card__footer--link">
                       Saiba mais...
                     </a>
                   </p>
-                  <div className="home__card__footer__hotel--patinha-black-and-nota">
-                    <img
-                      src={patinhaBlack}
-                      alt="patinha"
-                      className="home__card__footer__hotel--patinha-black"
-                    />
+                  <div className="card__footer--patinha-black-and-nota">
+                    <img src={patinhaBlack} alt="patinha" />
                     <img src={ponto} alt="ponto" />
                     <p>{nota}</p>
                   </div>
@@ -45,16 +44,22 @@ const Home = () => {
       </section>
 
       <section id="cards-animais">
-        <div className="title__card-section">
-          <p className="title__card-section--text">Veja nossas dicas</p>
-          <div className="title__card-section--linha" />
+        <div className="title-section">
+          <p className="title-section--text">Veja nossas dicas</p>
+          <div className="title-section--line" />
         </div>
+
         <div className="card-section">
           {cards.map(({ id, image, description }) => {
             return (
-              <Card key={id} image={image} containerClass="home__card">
-                <div className="home__card__footer">
-                  <p className="home__card__footer--text">{description}</p>
+              <Card
+                key={id}
+                image={image}
+                containerClass="card"
+                classImages="card__image--hoteis"
+              >
+                <div className="card__footer--animais">
+                  <p className="card__footer--text--animais">{description}</p>
                 </div>
               </Card>
             );

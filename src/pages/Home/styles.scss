@@ -1,66 +1,26 @@
 @import "../../styles/global.scss";
 
-.home__card {
-  @include centerInColumn();
-  border-radius: 20px;
-  background-color: #fbf8e0;
-  box-shadow: rgba(0, 0, 0, 0.226) 3px 5px 10px;
-  width: clamp(130px, 30%, 180px);
-
-  .home__card__footer__hotel {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-    height: 50px;
-
-    .home__card__footer__hotel--text {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      padding-left: 2px;
-      text-align: left;
-      color: #000000;
-      font-size: 0.8rem;
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
-
-      .home__card__footer__hotel--text--link {
-        color: #643b18dc;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: 10px;
-        text-decoration: none;
-      }
-    }
-
-    .home__card__footer__hotel--patinha-black-and-nota {
-      display: flex;
-      align-items: center;
-      height: 15px;
-      color: #000000;
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
-      font-size: 0.8rem;
-      gap: 2px;
-    }
+@media (min-width: 768px) {
+  .card-section {
+    justify-content: space-between;
   }
 }
 
-.title__card-section {
+.title-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px 0px;
+  margin: 5px 0px;
 
-  .title__card-section--text {
+  .title-section--text {
     color: #643b18;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    margin: 3px 0px;
+    margin: 1px 0px;
   }
 
-  .title__card-section--linha {
+  .title-section--line {
     display: flex;
     flex-direction: column;
     height: 0.5px;
@@ -70,21 +30,18 @@
 }
 
 .card-section {
-  height: 15rem;
-  padding: 5px 15px 10px 15px;
+  padding: 5px 15px 15px 15px;
   display: flex;
-  align-items: center;
-  overflow-y: auto;
-  position: static;
+  overflow-y: scroll;
   gap: 20px;
 
   &::-webkit-scrollbar {
-    width: 5px;
-    height: 10px; /* width of the entire scrollbar */
+    width: 100%;
+    height: 9px;
   }
 
   &::-webkit-scrollbar-track {
-    background: trasnparent;
+    background: rgba(0, 0, 0, 0.151);
   }
 
   &::-webkit-scrollbar-thumb {
@@ -93,17 +50,53 @@
     border: 3px solid rgba(255, 166, 0, 0);
   }
 
-  // .home__card {
-  //   @include centerInColumn();
-  //   border-radius: 20px;
-  //   box-shadow: rgba(0, 0, 0, 0.226) 3px 5px 10px;
-  //   background-color: #fbf8e0;
-  // }
+  .card {
+    @include centerInColumn();
+    border-radius: 20px;
+    background-color: #fbf8e0;
+    box-shadow: rgba(0, 0, 0, 0.226) 3px 5px 10px;
 
-  .home__card__footer {
-    height: 60px;
+    .card__footer {
+      display: flex;
+      gap: 10px;
 
-    .home__card__footer--text {
+      .card__footer--text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2px;
+        text-align: left;
+        color: #000000;
+        font-size: 0.7rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+
+        .card__footer--link {
+          color: #643b18dc;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-size: 10px;
+          text-decoration: none;
+        }
+      }
+
+      .card__footer--patinha-black-and-nota {
+        display: flex;
+        align-items: center;
+        max-height: 15px;
+        color: #000000;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 0.8rem;
+        gap: 3px;
+      }
+    }
+  }
+
+  .card__footer--animais {
+    height: 3rem;
+
+    .card__footer--text--animais {
       @include centerX-Y;
       text-align: center;
       color: #643b18;
