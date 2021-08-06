@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.scss";
 
-export function Card({ children, ...dados }) {
-  const { containerClass, image, id, classImages } = dados;
+export function Card({ children, ...data }) {
+  const { containerClass, image, id, classImages } = data;
 
   return (
     <div key={id} className={containerClass}>
