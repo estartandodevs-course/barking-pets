@@ -1,7 +1,6 @@
 import React from "react";
-import { patinhaBlack, ponto } from "../../assets/icons";
 
-import { Card, Header } from "../../components";
+import { CardHotel, CardTips, Header } from "../../components";
 
 import { cards, hoteis } from "../../services/api";
 import "./styles.scss";
@@ -18,28 +17,7 @@ const Home = () => {
 
         <div className="card-section">
           {hoteis.map(({ id, name, image, nota }) => {
-            return (
-              <Card
-                key={id}
-                image={image}
-                containerClass="card"
-                classImages="card__image--hoteis"
-              >
-                <div className="card__footer">
-                  <p className="card__footer--text">
-                    {name}
-                    <a href="top" className="card__footer--link">
-                      Saiba mais...
-                    </a>
-                  </p>
-                  <div className="card__footer--patinha-black-and-nota">
-                    <img src={patinhaBlack} alt="patinha" />
-                    <img src={ponto} alt="ponto" />
-                    <p>{nota}</p>
-                  </div>
-                </div>
-              </Card>
-            );
+            return <CardHotel key={id} name={name} image={image} nota={nota} />;
           })}
         </div>
       </section>
@@ -53,16 +31,7 @@ const Home = () => {
         <div className="card-section">
           {cards.map(({ id, image, description }) => {
             return (
-              <Card
-                key={id}
-                image={image}
-                containerClass="card"
-                classImages="card__image--hoteis"
-              >
-                <div className="card__footer--animais">
-                  <p className="card__footer--text--animais">{description}</p>
-                </div>
-              </Card>
+              <CardTips key={id} image={image} description={description} />
             );
           })}
         </div>
