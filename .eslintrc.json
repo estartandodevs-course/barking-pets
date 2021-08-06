@@ -13,6 +13,7 @@
   },
   "plugins": ["react"],
   "rules": {
+    "object-curly-newline": 0,
     "jsx-a11y/anchor-is-valid": 0,
     "react/jsx-filename-extension": [
       1,
@@ -22,6 +23,7 @@
     ],
     "quotes": ["error", "double"],
     "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/prop-types": 0,
     "react/react-in-jsx-scope": "off",
     "arrow-body-style": 0
