@@ -1,5 +1,5 @@
 import "./styles.scss";
-import { patinhaBlack, ponto } from "../../assets/icons";
+import { PatinhaBlack, Ponto } from "../../assets/icons";
 import { Card } from "../Card";
 
 export function CardHotel({ name, image, nota }) {
@@ -13,8 +13,8 @@ export function CardHotel({ name, image, nota }) {
           </a>
         </p>
         <div className="card__footer--patinha-black-and-nota">
-          <img src={patinhaBlack} alt="patinha" />
-          <img src={ponto} alt="ponto" />
+          <img src={PatinhaBlack} alt="patinha" />
+          <img src={Ponto} alt="ponto" />
           <p>{nota}</p>
         </div>
       </div>

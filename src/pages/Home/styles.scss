@@ -3,6 +3,7 @@
 @media (min-width: 768px) {
   .card-section {
     justify-content: space-between;
+    width: 100%;
   }
 }
 
@@ -11,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5px 0px;
+  margin: 25px 0px;
 
   .title-section--text {
     color: #643b18;
@@ -23,7 +24,7 @@
   .title-section--line {
     display: flex;
     flex-direction: column;
-    height: 0.5px;
+    height: 1px;
     width: 100%;
     background-color: #d6955877;
   }
@@ -105,4 +106,30 @@
       font-weight: 400;
     }
   }
+}
+
+.home-description {
+  @include column();
+  color: #503117;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.329) 1px 4px 5px;
+  margin-top: 80px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    & p:first-child::after {
+      content: "  ";
+      width: 2px;
+      display: -webkit-inline-box;
+    }
+  }
+}
+
+.card-overflow {
+  overflow: hidden;
 }

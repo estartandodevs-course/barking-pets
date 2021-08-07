@@ -1,4 +1,4 @@
-export { SearchComponent } from "./Search/SearchComponent";
+export { Search } from "./Search";
 export { Menu } from "./Menu";
 export { MenuDesktop } from "./MenuDesktop";
 export { Header } from "./Header";
