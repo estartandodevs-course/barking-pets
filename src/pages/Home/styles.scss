@@ -24,7 +24,7 @@
   .title-section--line {
     display: flex;
     flex-direction: column;
-    height: 0.5px;
+    height: 1px;
     width: 100%;
     background-color: #d6955877;
   }
@@ -108,7 +108,7 @@
   }
 }
 
-.text {
+.home-description {
   @include column();
   color: #503117;
   font-size: 1rem;
@@ -118,4 +118,18 @@
   font-weight: 700;
   text-shadow: rgba(0, 0, 0, 0.329) 1px 4px 5px;
   margin-top: 80px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    & p:first-child::after {
+      content: "  ";
+      width: 2px;
+      display: -webkit-inline-box;
+    }
+  }
+}
+
+.card-overflow {
+  overflow: hidden;
 }

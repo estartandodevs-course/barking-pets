@@ -8,13 +8,13 @@ const Home = () => {
       <C.Header />
       <C.MenuDesktop />
       <C.Menu />
-      <div className="text">
+      <div className="home-description">
         <p>Seja bem vindo, </p>
 
         <p> O que vamos fazer hoje?</p>
       </div>
       <C.Search />
-      <section id="cards-hoteis">
+      <section id="cards-hoteis" className="card-overflow">
         <div className="title-section">
           <p className="title-section--text">Hotéis mais avaliados</p>
           <div className="title-section--line" />
@@ -29,7 +29,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="cards-animais">
+      <section id="cards-animais" className="card-overflow">
         <div className="title-section">
           <p className="title-section--text">Veja nossas dicas</p>
           <div className="title-section--line" />
