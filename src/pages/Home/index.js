@@ -43,6 +43,7 @@ const Home = () => {
           })}
         </div>
       </section>
+
       <C.Footer />
     </>
   );
