@@ -1,0 +1,7 @@
+@import "../../styles/global.scss";
+
+.card__item--footer {
+  padding: 8px 0px;
+  text-align: center;
+  @include center();
+}
