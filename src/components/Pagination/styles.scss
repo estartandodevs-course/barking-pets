@@ -1,0 +1,74 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.pagination li {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: #9c612f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pagination li.active a {
+  color: white;
+}
+
+.pagination li.disable a {
+  color: black;
+}
+
+.pagination li.active {
+  background-color: #9c612f;
+  border-radius: 50%;
+  padding: 15px;
+
+  @media (mix-width: 768px) {
+    background-color: black;
+  }
+}
+
+.pagination li a:hover,
+.pagination li a.active {
+  color: black;
+}
+
+.page-selection {
+  width: 48px;
+  height: 30px;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.pagination .previous a {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.previous.disabled a {
+  color: #c1bfbf;
+}
+
+.pagination .next a {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.next.disabled a {
+  color: #c1bfbf;
+}
