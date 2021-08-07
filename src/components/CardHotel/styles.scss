@@ -5,10 +5,15 @@
   border-radius: 20px;
   background-color: #fbf8e0;
   box-shadow: rgba(0, 0, 0, 0.226) 3px 5px 10px;
+  width: clamp(150px, 20vw, 200px);
+  display: inline-flex;
+  margin-right: 15px;
+  margin-bottom: 20px;
 
   .card__footer {
     display: flex;
-    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
 
     .card__footer--text {
       width: 100%;
