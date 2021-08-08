@@ -12,6 +12,10 @@
   font-size: 25px;
   margin: 0 10px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    margin: 0 2px;
+  }
 }
 
 .pagination li a {
@@ -33,10 +37,6 @@
   background-color: #9c612f;
   border-radius: 50%;
   padding: 15px;
-
-  @media (mix-width: 768px) {
-    background-color: black;
-  }
 }
 
 .pagination li a:hover,
