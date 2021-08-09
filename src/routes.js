@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Home, AboutUs, SearchResult } from "./pages";
+import { Home, AboutUs, SearchResults } from "./pages";
 
 export default function Routes() {
   return (
@@ -13,7 +13,7 @@ export default function Routes() {
           <AboutUs />
         </Route>
         <Route exact path="/resultado-busca">
-          <SearchResult />
+          <SearchResults />
         </Route>
       </Switch>
     </BrowserRouter>

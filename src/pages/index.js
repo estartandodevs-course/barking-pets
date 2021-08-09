@@ -1,5 +1,5 @@
 import Home from "./Home";
 import AboutUs from "./AboutUs";
-import SearchResult from "./SearchResult";
+import SearchResults from "./SearchResults";
 
-export { Home, AboutUs, SearchResult };
+export { Home, AboutUs, SearchResults };
