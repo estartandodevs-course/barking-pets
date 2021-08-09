@@ -1,14 +1,20 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import {
-  Home,
-} from "./pages";
+import { Home, AboutUs, SearchResult } from "./pages";
 
 export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/AboutUs">
+          <AboutUs />
+        </Route>
+        <Route exact path="/resultado-busca">
+          <SearchResult />
+        </Route>
       </Switch>
     </BrowserRouter>
   );

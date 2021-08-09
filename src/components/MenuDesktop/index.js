@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.scss";
 
 export function MenuDesktop() {
@@ -18,13 +19,14 @@ export function MenuDesktop() {
           ? "menu-desktop__text--selected"
           : "menu-desktop__text--not-selected";
         return (
-          <a
+          <Link
             href="#"
             key={link.title}
             className={`menu-desktop__text ${aClass}`}
+            to={link.path}
           >
             <p>{link.title}</p>
-          </a>
+          </Link>
         );
       })}
     </div>
