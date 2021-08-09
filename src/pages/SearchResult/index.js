@@ -1,9 +1,11 @@
 import React from "react";
 
-export function SearchResult() {
+const SearchResult = () => {
   return (
     <div>
       <h1>SearchResult</h1>
     </div>
   );
-}
+};
+
+export default SearchResult;
