@@ -7,7 +7,7 @@ export function MenuDesktop() {
     { title: "Home", path: "/" },
     { title: "Sobre nós", path: "/sobre_nos" },
     { title: "Dicas", path: "/dicas" },
-    { title: "Cadastre-se", path: "/entrar" },
+    { title: "Cadastre-se", path: "/cadastro" },
     { title: "Entrar", path: "/entrar" },
   ];
   const { pathname } = useLocation();
@@ -20,7 +20,6 @@ export function MenuDesktop() {
           : "menu-desktop__text--not-selected";
         return (
           <Link
-            href="#"
             key={link.title}
             className={`menu-desktop__text ${aClass}`}
             to={link.path}
