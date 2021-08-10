@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 import "./styles.scss";
 
@@ -10,32 +10,43 @@ export function Filter({ filter, setFilter }) {
     { title: "Clinicas Veterinarias" },
     { title: "Pet Park" },
   ];
-
+  const detailsRef = useRef();
+  useEffect(() => {
+    detailsRef.current.open = true;
+  }, []);
   return (
-    <div className="filter">
-      {filterLinks.map(({ title }, index) => {
-        const isSelected = title === filter;
-        const aClass = isSelected ? "filter__text--selected" : " ";
-        const onClick = () => {
-          setFilter(title);
-        };
-        const onKeyPress = () => {
-          setFilter(title);
-        };
+    <>
+      <details ref={detailsRef}>
+        <summary>
+          <h3>Filtro</h3>
+        </summary>
 
-        return (
-          <span
-            role="button"
-            tabIndex={index}
-            onKeyPress={onKeyPress}
-            onClick={onClick}
-            key={title}
-            className={`filter__text ${aClass}`}
-          >
-            <p>{title}</p>
-          </span>
-        );
-      })}
-    </div>
+        <div className="filter">
+          {filterLinks.map(({ title }, index) => {
+            const isSelected = title === filter;
+            const aClass = isSelected ? "filter__text--selected" : " ";
+            const onClick = () => {
+              setFilter(title);
+            };
+            const onKeyPress = () => {
+              setFilter(title);
+            };
+
+            return (
+              <span
+                role="button"
+                tabIndex={index}
+                onKeyPress={onKeyPress}
+                onClick={onClick}
+                key={title}
+                className={`filter__text ${aClass}`}
+              >
+                <p>{title}</p>
+              </span>
+            );
+          })}
+        </div>
+      </details>
+    </>
   );
 }
