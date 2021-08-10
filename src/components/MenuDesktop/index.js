@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./styles.scss";
 
 export function MenuDesktop() {
@@ -10,7 +10,7 @@ export function MenuDesktop() {
     { title: "Cadastre-se", path: "/entrar" },
     { title: "Entrar", path: "/entrar" },
   ];
-  const pathname = "/";
+  const { pathname } = useLocation();
   return (
     <div className="menu-desktop">
       {menuLinks.map((link) => {
@@ -20,7 +20,6 @@ export function MenuDesktop() {
           : "menu-desktop__text--not-selected";
         return (
           <Link
-            href="#"
             key={link.title}
             className={`menu-desktop__text ${aClass}`}
             to={link.path}
