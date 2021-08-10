@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./style.scss";
+import "./styles.scss";
 
 export function MenuDesktop() {
   const menuLinks = [
