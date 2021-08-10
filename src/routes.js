@@ -9,10 +9,10 @@ export default function Routes() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/AboutUs">
+        <Route path="/sobre_nos">
           <AboutUs />
         </Route>
-        <Route path="/resultado-busca">
+        <Route path="/resultado_busca">
           <SearchResults />
         </Route>
       </Switch>

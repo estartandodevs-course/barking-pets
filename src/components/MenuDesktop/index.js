@@ -5,7 +5,7 @@ import "./styles.scss";
 export function MenuDesktop() {
   const menuLinks = [
     { title: "Home", path: "/" },
-    { title: "Sobre nós", path: "/about" },
+    { title: "Sobre nós", path: "/sobre_nos" },
     { title: "Dicas", path: "/dicas" },
     { title: "Cadastre-se", path: "/entrar" },
     { title: "Entrar", path: "/entrar" },
