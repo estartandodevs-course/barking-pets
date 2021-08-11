@@ -14,6 +14,7 @@ export function Filter({ filter, setFilter }) {
   useEffect(() => {
     detailsRef.current.open = true;
   }, []);
+
   return (
     <>
       <details ref={detailsRef}>
@@ -27,6 +28,7 @@ export function Filter({ filter, setFilter }) {
             const aClass = isSelected ? "filter__text--selected" : " ";
             const onClick = () => {
               setFilter(title);
+              detailsRef.current.open = false;
             };
             const onKeyPress = () => {
               setFilter(title);
