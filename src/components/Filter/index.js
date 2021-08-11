@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-
 import "./styles.scss";
+import { FilterIcon2 } from "../../assets/icons";
 
 export function Filter({ filter, setFilter }) {
   const filterLinks = [
@@ -18,7 +18,7 @@ export function Filter({ filter, setFilter }) {
     <>
       <details ref={detailsRef}>
         <summary>
-          <h3>Filtro</h3>
+          <img className="filter--icon" src={FilterIcon2} alt="Filter Icon" />
         </summary>
 
         <div className="filter">
