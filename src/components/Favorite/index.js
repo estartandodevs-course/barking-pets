@@ -1,17 +1,20 @@
+/* eslint-disable */
+import React, { useState } from "react";
+import Favoritar from "../../assets/icons/favoritar.svg";
+import Favoritado from "../../assets/icons/favoritado.svg";
 import "./styles.scss";
-import { Favoritar, Favoritado } from "../../assets/icons";
 
-
-export function Favorite () {
-  
-    
-    return (
-    
-    
-    <Favorite>
-
-
-
-    </Favorite>;
-    )
+export function Favorite() {
+  const [focus, setFocus] = useState(true);
+  function changeImage() {
+    setFocus(!focus);
+  }
+  return (
+    <img
+      onClick={changeImage}
+      className="Favorite"
+      src={focus ? Favoritar : Favoritado}
+      alt="favoritar"
+    />
+  );
 }
