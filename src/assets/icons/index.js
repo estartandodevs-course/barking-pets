@@ -6,6 +6,8 @@ import PatinhaBlack from "./patinhaBlack.svg";
 import Ponto from "./ponto.svg";
 import Favoritar from "./favoritar.svg";
 import Favoritado from "./favoritado.svg";
+import FilterIcon from "./filter-icon.png";
+import FilterIcon2 from "./filter-icon2.png";
 
 export {
   FacebookIcon,
@@ -16,4 +18,6 @@ export {
   Ponto,
   Favoritar,
   Favoritado,
+  FilterIcon,
+  FilterIcon2,
 };
