@@ -20,7 +20,6 @@ export function MenuDesktop() {
           : "menu-desktop__text--not-selected";
         return (
           <Link
-            href="#"
             key={link.title}
             className={`menu-desktop__text ${aClass}`}
             to={link.path}
