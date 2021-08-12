@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./styles.scss";
 import { FilterIcon } from "../../assets/icons";
+import { FilterItem } from "../FilterItem";
 
 export function Filter({ filter, setFilter }) {
   const filterLinks = [
@@ -24,27 +25,14 @@ export function Filter({ filter, setFilter }) {
 
         <div className="filter">
           {filterLinks.map(({ title }, index) => {
-            const isSelected = title === filter;
-            const aClass = isSelected ? "filter__text--selected" : " ";
-            const onClick = () => {
-              setFilter(title);
-              detailsRef.current.open = false;
-            };
-            const onKeyPress = () => {
-              setFilter(title);
-            };
-
             return (
-              <span
-                role="button"
-                tabIndex={index}
-                onKeyPress={onKeyPress}
-                onClick={onClick}
-                key={title}
-                className={`filter__text ${aClass}`}
-              >
-                <p>{title}</p>
-              </span>
+              <FilterItem
+                title={title}
+                index={index}
+                filter={filter}
+                setFilter={setFilter}
+                detailsRef={detailsRef}
+              />
             );
           })}
         </div>

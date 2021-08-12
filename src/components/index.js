@@ -8,3 +8,4 @@ export { CardHotel } from "./CardHotel";
 export { CardTips } from "./CardTips";
 export { Pagination } from "./Pagination";
 export { Filter } from "./Filter";
+export { FilterItem } from "./FilterItem";
