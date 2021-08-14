@@ -1,89 +1,47 @@
-import React, { useState } from "react";
+import { locationHeart } from "../../assets/icons/index";
+import "./styles.scss";
 
-export function AutoComplete(props) {
-  const [complete, setComplete] = useState({
-    activeSuggestions: 0,
-    filteredSuggestions: [],
-    showSuggestions: false,
-    userInput: "",
-  });
-
-  const {
-    // activeSuggestions,
-    filteredSuggestions,
-    showSuggestions,
-    userInput,
-  } = complete;
-
-  function onChangeHandle(event) {
-    const { suggestions } = props;
-    const inputValue = event.target.value;
-
-    const filteredSuggestion = suggestions.filter(({ estado }) => {
-      return (estado.toLowerCase().includes(inputValue.toLowerCase()));
-    });
-
-    setComplete({
-      activeSuggestions: 0,
-      filteredSuggestions: filteredSuggestion,
-      showSuggestions: true,
-      userInput: event.target.value,
-    });
-  }
-
+export function AutoComplete({
+  setUserInput,
+  showSuggestions,
+  setShowSuggestions,
+  userInput,
+  filteredSuggestions,
+}) {
   function onClick(event) {
-    setComplete({
-      activeSuggestions: 0,
-      filteredSuggestions: [],
-      showSuggestions: false,
-      userInput: event.target.innerText,
-    });
+    setUserInput(event.target.innerText);
+    setShowSuggestions(false);
   }
-
-  function onKeyDownHandle(event) {
-    setComplete({
-      activeSuggestions: 0,
-      filteredSuggestions: [],
-      showSuggestions: false,
-      userInput: event.target.innerText,
-    });
-  }
-
-  let suggestionsList;
 
   if (showSuggestions && userInput) {
     if (filteredSuggestions.length) {
-      suggestionsList = (
-        <ul className="">
-          {filteredSuggestions.map(({ estado, id }) => {
+      return (
+        <ul className="autocomplete__suggestion">
+          {filteredSuggestions.map(({ estado, uf, id }) => {
             return (
-              <li key={id} onClick={onClick} onKeyDown={onKeyDownHandle}>
-                {estado}
+              <li
+                key={id}
+                className="autocomplete__suggestion--box-text"
+                onClick={onClick}
+                aria-hidden="true"
+              >
+                <img
+                  src={locationHeart}
+                  alt=""
+                  className="autocomplete__suggestion--coracao"
+                />
+                {`${uf} - ${estado} `}
               </li>
             );
           })}
         </ul>
       );
-    } else {
-      suggestionsList = (
-        <div>
-          <strong>Item Não Encontrado</strong>
-        </div>
-      );
     }
+    return (
+      <div className="autocomplete__erro">
+        <strong>Local Não Encontrado</strong>
+      </div>
+    );
   }
-
-  console.log(filteredSuggestions);
-
-  return (
-    <>
-      <input
-        type="text"
-        onChange={onChangeHandle}
-        value={userInput}
-        className="search-input"
-      />
-      {suggestionsList}
-    </>
-  );
+  return null;
 }
