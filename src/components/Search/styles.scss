@@ -14,7 +14,7 @@
     border: rgba(211, 211, 211, 0.575) solid 0.5px;
     box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.295);
 
-    @media (min-width: 768px) {
+    @media (min-width: $break-point) {
       width: 40%;
     }
 

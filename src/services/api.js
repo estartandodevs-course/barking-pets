@@ -50,7 +50,7 @@ export const cards = [
 export const hoteis = [
   {
     id: 1,
-    name: "Ibis Copacabana",
+    name: "Ibis CopacabanaASDSADASDSAaaaaa",
     image: H.hotel1,
     nota: "4,8",
   },

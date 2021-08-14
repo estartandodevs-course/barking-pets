@@ -1,4 +1,3 @@
-import "./styles.scss";
 import { Card } from "../Card";
 
 export function CardTips({ image, description }) {

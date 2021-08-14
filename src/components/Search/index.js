@@ -2,10 +2,10 @@ import React from "react";
 import { SearchIcon } from "../../assets/icons/index";
 import "./styles.scss";
 
-export const Search = () => {
+export const Search = ({ classSearch = "" }) => {
   return (
     <div className="search">
-      <form className="search__form">
+      <form className={`${classSearch} search__form`}>
         <input
           type="text"
           name="input"

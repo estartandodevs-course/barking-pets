@@ -1,6 +1,7 @@
 import * as C from "../../components/index";
 import { cards, hoteis } from "../../services/api";
 import "./styles.scss";
+import { titleSection } from "./home.module.scss";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
       </div>
       <C.Search />
       <section id="cards-hoteis" className="card-overflow">
-        <div className="title-section">
+        <div className={titleSection}>
           <p className="title-section--text">Hotéis mais avaliados</p>
           <div className="title-section--line" />
         </div>
@@ -30,7 +31,7 @@ const Home = () => {
       </section>
 
       <section id="cards-animais" className="card-overflow">
-        <div className="title-section">
+        <div className={titleSection}>
           <p className="title-section--text">Veja nossas dicas</p>
           <div className="title-section--line" />
         </div>

@@ -1,7 +1,13 @@
 import { useState } from "react";
 import * as C from "../../components/index";
-import { cards, hoteis } from "../../services/api";
-import "./styles.scss";
+import { hoteis } from "../../services/api";
+import {
+  SearchBar,
+  searchTitle,
+  searchTotal,
+  searchTotalText,
+  searchTotalCard,
+} from "./search.module.scss";
 
 const SearchResults = () => {
   const [filter, setFilter] = useState("");
@@ -11,41 +17,26 @@ const SearchResults = () => {
       <C.Header />
       <C.Menu />
       <C.MenuDesktop />
-      <h3 className="search-title">
-        {filter ? `Opções para ${filter}` : "  "}
-      </h3>
-      <C.Search />
+      <h3 className={searchTitle}>{filter ? `Opções para ${filter}` : "  "}</h3>
+
+      <C.Search classSearch={SearchBar} />
 
       <C.Filter filter={filter} setFilter={setFilter} />
-      <section id="cards-hoteis" className="card-overflow">
-        <div className="title-section">
-          <p className="title-section--text">Resultados da pesquisa</p>
-          <div className="title-section--line" />
-        </div>
 
-        <div className="card-section">
-          {hoteis.map(({ id, name, image, nota }) => {
-            return (
-              <C.CardHotel key={id} name={name} image={image} nota={nota} />
-            );
-          })}
-        </div>
-      </section>
+      <div className={searchTotal}>
+        <p className={searchTotalText}>
+          Resultados da pesquisa:
+          {hoteis.length}
+        </p>
+      </div>
 
-      <section id="cards-animais" className="card-overflow">
-        <div className="title-section">
-          <p className="title-section--text">Veja nossas dicas</p>
-          <div className="title-section--line" />
-        </div>
+      <div className={searchTotalCard}>
+        {hoteis.map(({ id, name, image, nota }) => {
+          return <C.CardHotel key={id} name={name} image={image} nota={nota} />;
+        })}
+      </div>
 
-        <div className="card-section">
-          {cards.map(({ id, image, description }) => {
-            return (
-              <C.CardTips key={id} image={image} description={description} />
-            );
-          })}
-        </div>
-      </section>
+      <C.Pagination />
       <C.Footer />
     </>
   );

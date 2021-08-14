@@ -1,25 +1,27 @@
+@import "../../styles/global.scss";
+
 .filter {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  border-bottom: #9c612f 0.5px dashed;
-  border-top: #9c612f 0.5px dashed;
-  box-shadow: 0px 7.53995px 11.3099px rgba(156, 97, 47, 0.25);
+  border-bottom: $primary-color 0.5px dashed;
+  border-top: $primary-color 0.5px dashed;
+  box-shadow: 0px 2.54px 11.3099px rgba(156, 97, 47, 0.25);
 
-  @media (max-width: 768px) {
+  @media (max-width: $break-point) {
     flex-wrap: wrap;
     margin: 20px;
   }
 
   &__text {
-    font-family: "Poppins", sans-serif;
+    font-family: $font-family;
     font-weight: 700;
-    color: #9c612f;
+    color: $primary-color;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
 
-    @media (max-width: 768px) {
+    @media (max-width: $break-point) {
       padding: 20px;
     }
 
@@ -42,7 +44,7 @@
 summary {
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: $break-point) {
     display: block;
   }
 }

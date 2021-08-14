@@ -1,11 +1,15 @@
-import "./styles.scss";
 import { PatinhaBlack, Ponto } from "../../assets/icons";
 import { Card } from "../Card";
 
 export function CardHotel({ name, image, nota }) {
   return (
-    <Card image={image} containerClass="card" classImages="card__image--hoteis">
-      <div className="card__footer">
+    <Card
+      image={image}
+      containerClass="card"
+      classFooter="card__footer"
+      classImages="card__image--hoteis"
+    >
+      <div>
         <p className="card__footer--text">
           {name}
           <a href="top" className="card__footer--link">
