@@ -5,6 +5,10 @@ import InstagramIcon from "./instagram-icon.svg";
 import PatinhaBlack from "./patinhaBlack.svg";
 import Ponto from "./ponto.svg";
 import locationHeart from "./location-coracao.svg";
+import Favoritar from "./favoritar.svg";
+import Favoritado from "./favoritado.svg";
+import FilterIcon from "./filter-icon.png";
+import FilterIcon2 from "./filter-icon2.png";
 
 export {
   FacebookIcon,
@@ -14,4 +18,8 @@ export {
   MenuIcon,
   PatinhaBlack,
   Ponto,
+  Favoritar,
+  Favoritado,
+  FilterIcon,
+  FilterIcon2,
 };
