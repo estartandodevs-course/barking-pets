@@ -1,22 +1,22 @@
 import { PatinhaBlack, Ponto } from "../../assets/icons";
 import { Card } from "../Card";
 
-export function CardHotel({ name, image, nota }) {
+export function CardHotel({ name, image, nota, styles }) {
   return (
     <Card
       image={image}
-      containerClass="card"
-      classFooter="card__footer"
-      classImages="card__image--hoteis"
+      containerClass={`card ${styles?.container}`}
+      classFooter={`card__footer ${styles?.footer}`}
+      classImages={`card__image--hoteis ${styles?.picture}`}
     >
       <div>
-        <p className="card__footer--text">
+        <p className={`card__footer--text ${styles?.text}`}>
           {name}
-          <a href="top" className="card__footer--link">
+          <a href="top" className={`card__footer--link ${styles?.paw}`}>
             Saiba mais...
           </a>
         </p>
-        <div className="card__footer--patinha-black-and-nota">
+        <div className={`card__footer--patinha-black-and-nota ${styles?.link}`}>
           <img src={PatinhaBlack} alt="patinha" />
           <img src={Ponto} alt="ponto" />
           <p>{nota}</p>
