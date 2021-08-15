@@ -1,7 +1,40 @@
+@import "../../styles/global.scss";
+
 .titleSection {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 25px 0px;
+}
+
+.hotelTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2px;
+  text-align: left;
+  color: #000000;
+  font-size: 0.7rem;
+  font-family: $font-family;
+  font-weight: 600;
+  flex: 1;
+}
+
+.footerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 15px;
+  color: #000000;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
