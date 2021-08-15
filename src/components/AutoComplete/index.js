@@ -17,7 +17,7 @@ export function AutoComplete({
     if (filteredSuggestions.length) {
       return (
         <ul className="autocomplete__suggestion">
-          {filteredSuggestions.map(({ estado, uf, id }) => {
+          {filteredSuggestions.map(({ municipio, uf, id }) => {
             return (
               <li
                 key={id}
@@ -30,7 +30,7 @@ export function AutoComplete({
                   alt=""
                   className="autocomplete__suggestion--coracao"
                 />
-                {`${uf} - ${estado} `}
+                {`${uf} - ${municipio} `}
               </li>
             );
           })}
