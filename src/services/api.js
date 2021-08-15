@@ -90,4 +90,22 @@ export const hoteis = [
     image: H.hotel7,
     nota: "4,8",
   },
+  {
+    id: 8,
+    name: "Hotel 8",
+    image: H.hotel8,
+    nota: "4,5",
+  },
+  {
+    id: 9,
+    name: "Hotel 9",
+    image: H.hotel9,
+    nota: "4,3",
+  },
+  {
+    id: 8,
+    name: "Hotel 10",
+    image: H.hotel10,
+    nota: "4,2",
+  },
 ];
