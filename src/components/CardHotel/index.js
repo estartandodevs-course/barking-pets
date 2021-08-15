@@ -11,7 +11,7 @@ export function CardHotel({ name, image, nota, styles, children }) {
     >
       <div>
         {children}
-        <p className={`card__footer--text ${styles?.text}`}>
+        {/* <p className={`card__footer--text ${styles?.text}`}>
           {name}
           <a href="top" className={`card__footer--link ${styles?.paw}`}>
             Saiba mais...
@@ -21,7 +21,7 @@ export function CardHotel({ name, image, nota, styles, children }) {
           <img src={PatinhaBlack} alt="patinha" />
           <img src={Ponto} alt="ponto" />
           <p>{nota}</p>
-        </div>
+        </div> */}
       </div>
     </Card>
   );
