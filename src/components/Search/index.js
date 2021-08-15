@@ -14,8 +14,8 @@ export const Search = ({ suggestions }) => {
 
   useEffect(() => {
     setFilteredSuggestions(() => {
-      return suggestions.filter(({ estado, uf }) => {
-        return matches(`${uf} - ${estado} `);
+      return suggestions.filter(({ municipio, uf }) => {
+        return matches(`${uf} - ${municipio} `);
       });
     });
   }, [userInput]);
