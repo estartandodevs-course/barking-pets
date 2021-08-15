@@ -57,6 +57,11 @@ const SearchResults = () => {
       </div>
 
       <C.Pagination />
+      <p className={searchTotalText}>
+        1-10 de
+        {hoteis.length}
+        resultados
+      </p>
       <C.Footer />
     </>
   );
