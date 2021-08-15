@@ -1,5 +1,6 @@
 import * as C from "../../components/index";
 import { cards, hoteis } from "../../services/api";
+import { states } from "../../services/mockLocations";
 import "./styles.scss";
 
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
 
         <p> O que vamos fazer hoje?</p>
       </div>
-      <C.Search />
+      <C.Search suggestions={states} />
       <section id="cards-hoteis" className="card-overflow">
         <div className="title-section">
           <p className="title-section--text">Hotéis mais avaliados</p>
