@@ -6,7 +6,6 @@ import "./styles.scss";
 const Home = () => {
   return (
     <>
-
       <C.Header />
       <C.MenuDesktop />
       <C.Menu />
