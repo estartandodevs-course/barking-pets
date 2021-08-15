@@ -1,45 +1,61 @@
-// 20210814025552
-// https://servicodados.ibge.gov.br/api/v1/localidades/estados
-
 export const states = [
   {
-    id: 11,
-    sigla: "RO",
-    nome: "Rondônia",
+    id: 1,
+    uf: "RJ",
+    municipio: "Angra dos Reis",
   },
   {
-    id: 12,
-    uf: "AC",
-    estado: "Acre",
+    id: 2,
+    uf: "RJ",
+    municipio: "Cabo Frio",
 
   },
   {
-    id: 13,
-    uf: "AM",
-    estado: "Amazonas",
+    id: 3,
+    uf: "RJ",
+    municipio: "Campos dos Goytacazes",
 
   },
   {
-    id: 14,
-    uf: "RR",
-    estado: "Roraima",
+    id: 4,
+    uf: "RJ",
+    municipio: "Duque de Caxias",
 
   },
   {
-    id: 15,
-    uf: "PA",
-    estado: "Pará",
+    id: 5,
+    uf: "RJ",
+    municipio: "Guapimirim",
 
   },
   {
-    id: 16,
-    uf: "AP",
-    estado: "Amapá",
+    id: 6,
+    uf: "RJ",
+    municipio: "Itaboraí",
 
   },
   {
-    id: 17,
-    uf: "TO",
-    estado: "Tocantins",
+    id: 7,
+    uf: "RJ",
+    municipio: "Seropédica",
 
-  }];
+  },
+  {
+    id: 8,
+    uf: "RJ",
+    municipio: "Rio de Janeiro",
+
+  },
+  {
+    id: 9,
+    uf: "RJ",
+    municipio: "Rio Bonito",
+
+  },
+  {
+    id: 10,
+    uf: "RJ",
+    municipio: "Teresópolis",
+
+  },
+];
