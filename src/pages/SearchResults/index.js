@@ -48,11 +48,13 @@ const SearchResults = () => {
               name={name}
               image={image}
               nota={nota}
-            />
+            >
+              <C.Favorite />
+            </C.CardHotel>
           );
         })}
       </div>
-      <C.Favorite />
+
       <C.Pagination />
       <C.Footer />
     </>
