@@ -4,10 +4,11 @@
   width: 100%;
   margin-bottom: 50px;
   @include centerInColumn();
+  position: relative;
 
   .search__form {
     @include centerX-Y();
-    width: 85%;
+    width: 50%;
     height: 50px;
     background-color: white;
     border-radius: 15px;

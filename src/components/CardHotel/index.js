@@ -1,7 +1,13 @@
-import { PatinhaBlack, Ponto } from "../../assets/icons";
+// import { PatinhaBlack, Ponto } from "../../assets/icons";
 import { Card } from "../Card";
 
-export function CardHotel({ name, image, nota, styles, children }) {
+export function CardHotel({
+  // name,
+  image,
+  //  nota,
+  styles,
+  children,
+}) {
   return (
     <Card
       image={image}

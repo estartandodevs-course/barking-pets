@@ -14,6 +14,7 @@ import {
   cardLink,
   cardPaw,
 } from "./search.module.scss";
+import { states } from "../../services/mockLocations";
 
 const SearchResults = () => {
   const [filter, setFilter] = useState("");
@@ -24,7 +25,7 @@ const SearchResults = () => {
       <C.Menu />
       <C.MenuDesktop />
       <h3 className={searchTitle}>{filter ? `Opções para ${filter}` : "  "}</h3>
-      <C.Search classSearch={SearchBar} />
+      <C.Search classSearch={SearchBar} suggestions={states} />
       <C.Filter filter={filter} setFilter={setFilter} />
       <div className={searchTotal}>
         <p className={searchTotalText}>
