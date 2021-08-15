@@ -1,8 +1,11 @@
 import * as C from "../../components/index";
+
+import { PatinhaBlack, Ponto } from "../../assets/icons";
 import { cards, hoteis } from "../../services/api";
 import { states } from "../../services/mockLocations";
+
 import "./styles.scss";
-import { titleSection } from "./home.module.scss";
+import * as S from "./home.module.scss";
 
 const Home = () => {
   return (
@@ -17,7 +20,7 @@ const Home = () => {
       </div>
       <C.Search suggestions={states} />
       <section id="cards-hoteis" className="card-overflow">
-        <div className={titleSection}>
+        <div className={S.titleSection}>
           <p className="title-section--text">Hotéis mais avaliados</p>
           <div className="title-section--line" />
         </div>
@@ -25,14 +28,26 @@ const Home = () => {
         <div className="card-section">
           {hoteis.map(({ id, name, image, nota }) => {
             return (
-              <C.CardHotel key={id} name={name} image={image} nota={nota} />
+              <C.CardHotel key={id} image={image}>
+                <div className={S.footerContainer}>
+                  <div className={S.titleContainer}>
+                    <p className={S.hotelTitle}>{name}</p>
+                    <img src={PatinhaBlack} alt="patinha" />
+                    <img src={Ponto} alt="ponto" />
+                    <p>{nota}</p>
+                  </div>
+                  <a href="top" className="card__footer--link">
+                    Saiba mais...
+                  </a>
+                </div>
+              </C.CardHotel>
             );
           })}
         </div>
       </section>
 
       <section id="cards-animais" className="card-overflow">
-        <div className={titleSection}>
+        <div className={S.titleSection}>
           <p className="title-section--text">Veja nossas dicas</p>
           <div className="title-section--line" />
         </div>
