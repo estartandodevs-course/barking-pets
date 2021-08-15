@@ -1,0 +1,22 @@
+@import "../../styles/global.scss";
+
+.card__footer--animais {
+  height: 3rem;
+  width: 100%;
+}
+.card__footer--text--animais {
+  @include centerX-Y;
+  text-align: center;
+  color: #643b18;
+  font-size: 0.7rem;
+  font-family: $font-family;
+  font-weight: 400;
+}
+
+.card__footer--container {
+  width: 100%;
+}
+
+.card--tips {
+  width: min-content;
+}
