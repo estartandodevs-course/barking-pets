@@ -30,7 +30,37 @@
 
 .searchTotalCard {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 50px;
   padding: 0 20px;
+  margin-left: 500px;
+}
+
+.cardSearch {
+  width: 400px;
+  height: auto;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.226) 1px 2px 2px;
+}
+
+.cardFooter {
+  width: 200px;
+  height: auto;
+}
+
+.cardImage {
+  width: 400px;
+  height: auto;
+}
+
+.cardText {
+  font-size: 20px;
+}
+
+.cardLink {
+  font-size: 20px;
+}
+
+.cardPaw {
+  font-size: 20px;
 }

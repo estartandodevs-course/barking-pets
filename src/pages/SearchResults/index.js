@@ -7,6 +7,12 @@ import {
   searchTotal,
   searchTotalText,
   searchTotalCard,
+  cardSearch,
+  cardFooter,
+  cardImage,
+  cardText,
+  cardLink,
+  cardPaw,
 } from "./search.module.scss";
 
 const SearchResults = () => {
@@ -18,24 +24,35 @@ const SearchResults = () => {
       <C.Menu />
       <C.MenuDesktop />
       <h3 className={searchTitle}>{filter ? `Opções para ${filter}` : "  "}</h3>
-
       <C.Search classSearch={SearchBar} />
-
       <C.Filter filter={filter} setFilter={setFilter} />
-
       <div className={searchTotal}>
         <p className={searchTotalText}>
           Resultados da pesquisa:
           {hoteis.length}
         </p>
       </div>
-
       <div className={searchTotalCard}>
         {hoteis.map(({ id, name, image, nota }) => {
-          return <C.CardHotel key={id} name={name} image={image} nota={nota} />;
+          return (
+            <C.CardHotel
+              styles={{
+                container: cardSearch,
+                footer: cardFooter,
+                picture: cardImage,
+                text: cardText,
+                link: cardLink,
+                paw: cardPaw,
+              }}
+              key={id}
+              name={name}
+              image={image}
+              nota={nota}
+            />
+          );
         })}
       </div>
-
+      <C.Favorite />
       <C.Pagination />
       <C.Footer />
     </>
