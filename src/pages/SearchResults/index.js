@@ -1,5 +1,6 @@
 import { useState } from "react";
 import * as C from "../../components/index";
+import { states } from "../../services/mockLocations";
 import "./styles.scss";
 
 const SearchResults = () => {
@@ -10,7 +11,7 @@ const SearchResults = () => {
       <h3 className="search-title">
         {filter ? `Opções para ${filter}` : "  "}
       </h3>
-      <C.Search />
+      <C.Search suggestions={states} />
       <C.Filter filter={filter} setFilter={setFilter} />
     </>
   );
