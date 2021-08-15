@@ -1,7 +1,6 @@
 import "./styles.scss";
 import { PatinhaBlack, Ponto } from "../../assets/icons";
 import { Card } from "../Card";
-import { Favorite } from "../Favorite";
 
 export function CardHotel({ name, image, nota }) {
   return (
