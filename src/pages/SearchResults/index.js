@@ -13,6 +13,8 @@ import {
   cardText,
   cardLink,
   cardPaw,
+  searchFooter,
+  cardFavorite,
 } from "./search.module.scss";
 import { states } from "../../services/mockLocations";
 
@@ -50,7 +52,7 @@ const SearchResults = () => {
               image={image}
               nota={nota}
             >
-              <C.Favorite />
+              <C.Favorite classFavorite={cardFavorite} />
             </C.CardHotel>
           );
         })}
@@ -62,7 +64,7 @@ const SearchResults = () => {
         {hoteis.length}
         resultados
       </p>
-      <C.Footer />
+      <C.Footer classFooter={searchFooter} />
     </>
   );
 };

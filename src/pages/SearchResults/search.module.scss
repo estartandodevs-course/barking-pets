@@ -1,3 +1,5 @@
+@import "../../styles/global.scss";
+
 .searchBar {
   margin-top: 20px;
 }
@@ -10,7 +12,7 @@
   line-height: 46px;
   letter-spacing: 0.05em;
   color: #503117;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .searchTotal {
@@ -32,7 +34,30 @@
   grid-template-columns: 1fr 2fr;
   gap: 50px;
   padding: 0 20px;
-  margin-left: 500px;
+  padding-left: 500px;
+  @media (max-width: $break-point) {
+    .cardImage {
+      width: 245.7px;
+      height: 226.52px;
+    }
+    .cardSearch {
+      width: 245.7px;
+      height: 226.52px;
+    }
+    .cardFavorite {
+      height: 50px;
+      right: 2px;
+      top: 4px;
+    }
+  }
+}
+@media (max-width: $break-point) {
+  .searchTotalCard {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-left: 0;
+  }
 }
 
 .cardSearch {
@@ -62,4 +87,8 @@
 
 .cardPaw {
   font-size: 20px;
+}
+
+.searchFooter {
+  margin-top: 100px;
 }
