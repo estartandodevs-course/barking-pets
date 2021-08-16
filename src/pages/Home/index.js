@@ -24,7 +24,7 @@ const Home = () => {
         <div className="card-section">
           {hoteis.map(({ id, name, image, nota }) => {
             return (
-              <C.CardHotel key={id} name={name} image={image} nota={nota} />
+              <C.CardHotel key={id} id={id} name={name} image={image} nota={nota} />
             );
           })}
         </div>
