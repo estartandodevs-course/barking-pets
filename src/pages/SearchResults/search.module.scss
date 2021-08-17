@@ -46,7 +46,7 @@
 
   @media (max-width: $break-point) {
     .cardImage {
-      width: 260px;
+      width: 263px;
       height: 226px;
     }
     .cardSearch {
@@ -55,8 +55,8 @@
     }
     .cardFavorite {
       height: 50px;
-      right: 2px;
-      top: 4px;
+      right: 10px;
+      top: 10px;
     }
   }
 }
@@ -81,7 +81,7 @@
 }
 
 .cardImage {
-  width: 400px;
+  width: 408px;
   height: auto;
 }
 
