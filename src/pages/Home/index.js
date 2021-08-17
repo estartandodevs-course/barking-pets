@@ -1,5 +1,5 @@
 import * as C from "../../components/index";
-import { cards, hoteis } from "../../services/api";
+import { cards, allBusiness } from "../../services/api";
 import { states } from "../../services/mockLocations";
 import "./styles.scss";
 
@@ -22,7 +22,7 @@ const Home = () => {
         </div>
 
         <div className="card-section">
-          {hoteis.map(({ id, name, image, nota }) => {
+          {allBusiness.map(({ id, name, image, nota }) => {
             return (
               <C.CardHotel key={id} id={id} name={name} image={image} nota={nota} />
             );

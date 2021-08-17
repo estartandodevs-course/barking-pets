@@ -1,0 +1,19 @@
+@import "../../styles/global.scss";
+
+.hotelDescription {
+  background-color: aqua;
+
+  .hotelDescription__images {
+    display: flex;
+    position: relative;
+
+    .hotelDescription__image--sair {
+      position: absolute;
+    }
+
+    .hotelDescription__image--hotel {
+      width: 100%;
+      border-radius: 0px;
+    }
+  }
+}
