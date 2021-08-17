@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { ButtonContact } from "../../components";
+import { Button } from "../../components";
 import "./styles.scss";
 
 const HotelDescription = ({ data }) => {
@@ -17,7 +17,7 @@ const HotelDescription = ({ data }) => {
               <h1>{hotel.name}</h1>
               <img src={hotel.image} alt={hotel.name} />
               <p>{hotel.nota}</p>
-              <ButtonContact classButton="">Entrar Em Contato</ButtonContact>
+              <Button classButton="">Entrar Em Contato</Button>
             </div>
           );
         })}

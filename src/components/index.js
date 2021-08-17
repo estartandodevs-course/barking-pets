@@ -9,4 +9,4 @@ export { CardTips } from "./CardTips";
 export { Pagination } from "./Pagination";
 export { Filter } from "./Filter";
 export { FilterItem } from "./FilterItem";
-export { ButtonContact } from "./ButtonContact";
+export { Button } from "./Button";
