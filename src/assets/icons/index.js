@@ -9,6 +9,8 @@ import Favoritar from "./favoritar.svg";
 import Favoritado from "./favoritado.svg";
 import FilterIcon from "./filter-icon.png";
 import FilterIcon2 from "./filter-icon2.png";
+import patinhaBrown from "./patinhaBrown.svg";
+import pontoBrown from "./pontoBrown.svg";
 
 export {
   FacebookIcon,
@@ -22,4 +24,6 @@ export {
   Favoritado,
   FilterIcon,
   FilterIcon2,
+  patinhaBrown,
+  pontoBrown,
 };
