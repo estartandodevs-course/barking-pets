@@ -10,3 +10,5 @@ export { Pagination } from "./Pagination";
 export { Filter } from "./Filter";
 export { FilterItem } from "./FilterItem";
 export { Favorite } from "./Favorite";
+export { Button } from "./Button";
+export { EstablishmentPrice } from "./EstablishmentPrice";
