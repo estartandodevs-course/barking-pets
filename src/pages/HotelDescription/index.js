@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Button } from "../../components";
 import { SairIcon } from "../../assets/icons";
+import { EstablishmentPrice } from "../../components";
 import { getBusinessById } from "../../services/business";
 import "./styles.scss";
 
@@ -33,7 +33,7 @@ const HotelDescription = () => {
           </div>
           <h1>{business.name}</h1>
           <p>{business.nota}</p>
-          <Button> Entrar em contato </Button>
+          <EstablishmentPrice />
         </main>
       )}
     </section>
