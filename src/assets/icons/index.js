@@ -9,6 +9,7 @@ import Favoritar from "./favoritar.svg";
 import Favoritado from "./favoritado.svg";
 import FilterIcon from "./filter-icon.png";
 import FilterIcon2 from "./filter-icon2.png";
+import SairIcon from "./sair.svg";
 
 export {
   FacebookIcon,
@@ -22,4 +23,5 @@ export {
   Favoritado,
   FilterIcon,
   FilterIcon2,
+  SairIcon,
 };
