@@ -112,7 +112,7 @@ export const allBusiness = [
     valor: "R$ 187,00",
   },
   {
-    id: 8,
+    id: 10,
     name: "Real Palace Hotel",
     image: H.hotel10,
     nota: "3,3",

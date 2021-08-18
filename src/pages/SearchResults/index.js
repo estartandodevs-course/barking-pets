@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import * as C from "../../components/index";
 import { patinhaBrown, pontoBrown } from "../../assets/icons";
-import { hoteis } from "../../services/api";
+import { allBusiness } from "../../services/api";
 import * as S from "./search.module.scss";
 import { states } from "../../services/mockLocations";
 
@@ -21,12 +22,12 @@ const SearchResults = () => {
       <div className={S.searchTotal}>
         <p className={S.searchTotalText}>
           Resultados da pesquisa:
-          {hoteis.length}
+          {allBusiness.length}
         </p>
       </div>
       <div className={S.searchContainer}>
         <div className={S.searchTotalCard}>
-          {hoteis.map(({ id, name, image, nota, valor }) => {
+          {allBusiness.map(({ id, name, image, nota, valor }) => {
             return (
               <C.CardHotel
                 styles={{
@@ -52,9 +53,12 @@ const SearchResults = () => {
                 </div>
                 <div className={S.searchPrice}>
                   <p>{valor}</p>
-                  <a href=" " target="_blank">
+                  <Link
+                    to={`/description_hotel/${id}`}
+                    className="card__footer--link"
+                  >
                     Ver mais...
-                  </a>
+                  </Link>
                 </div>
                 <C.Favorite classFavorite={S.cardFavorite} />
               </C.CardHotel>
@@ -66,7 +70,7 @@ const SearchResults = () => {
       <C.Pagination />
       <p className={S.searchTotalText}>
         1-10 de
-        {hoteis.length}
+        {allBusiness.length}
         resultados
       </p>
       <C.Footer classFooter={S.searchFooter} />
