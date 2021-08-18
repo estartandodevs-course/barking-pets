@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 import * as C from "../../components/index";
-
 import { PatinhaBlack, Ponto } from "../../assets/icons";
-import { cards, hoteis } from "../../services/api";
+import { cards, allBusiness } from "../../services/api";
 import { states } from "../../services/mockLocations";
 
 import "./styles.scss";
@@ -26,19 +26,27 @@ const Home = () => {
         </div>
 
         <div className="card-section">
-          {hoteis.map(({ id, name, image, nota }) => {
+          {allBusiness.map(({ id, name, image, nota }) => {
             return (
               <C.CardHotel key={id} image={image}>
                 <div className={S.footerContainer}>
                   <div className={S.titleContainer}>
                     <p className={S.hotelTitle}>{name}</p>
-                    <img src={PatinhaBlack} alt="patinha" />
+
+                    <img
+                      className={S.simbolsHome}
+                      src={PatinhaBlack}
+                      alt="patinha"
+                    />
                     <img src={Ponto} alt="ponto" />
-                    <p>{nota}</p>
+                    <p className={S.hotelGrade}>{nota}</p>
                   </div>
-                  <a href="top" className="card__footer--link">
+                  <Link
+                    to={`/description_hotel/${id}`}
+                    className="card__footer--link"
+                  >
                     Saiba mais...
-                  </a>
+                  </Link>
                 </div>
               </C.CardHotel>
             );

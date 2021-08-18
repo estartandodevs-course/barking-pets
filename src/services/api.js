@@ -47,7 +47,7 @@ export const cards = [
   },
 ];
 
-export const hoteis = [
+export const allBusiness = [
   {
     id: 1,
     name: "Belmond Copacabana",
