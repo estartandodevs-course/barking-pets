@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Button } from "../../components";
 import { SairIcon } from "../../assets/icons";
 import { getBusinessById } from "../../services/business";
 import "./styles.scss";
@@ -15,6 +16,19 @@ const HotelDescription = () => {
   }, []);
 
   return (
+    <section className="Full">
+      {data
+        .filter((hotel) => idInNumber === hotel.id)
+        .map((hotel) => {
+          return (
+            <div key={hotel.id}>
+              <h1>{hotel.name}</h1>
+              <img src={hotel.image} alt={hotel.name} />
+              <p>{hotel.nota}</p>
+              <Button classButton="">Entrar Em Contato</Button>
+            </div>
+          );
+        })}
     <section className="hotelDescription">
       {business
         && (
