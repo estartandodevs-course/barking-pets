@@ -7,3 +7,7 @@ export { Card } from "./Card";
 export { CardHotel } from "./CardHotel";
 export { CardTips } from "./CardTips";
 export { Pagination } from "./Pagination";
+export { Filter } from "./Filter";
+export { FilterItem } from "./FilterItem";
+export { Button } from "./Button";
+export { EstablishmentPrice } from "./EstablishmentPrice";
