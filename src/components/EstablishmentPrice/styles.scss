@@ -1,0 +1,37 @@
+@import "../../styles/global.scss";
+
+.establishment-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 75px;
+  margin: 0px 10px;
+  border: 1px solid #e7812c;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.11) 3px 5px 10px;
+
+  .establishment-price__texts {
+    @include center();
+
+    .establishment-price__texts--text {
+      color: #643b18;
+      font-family: "Poppins", sans-serif;
+      font-size: 80%;
+      font-weight: 600;
+      margin-right: 5px;
+    }
+
+    .establishment-price__texts--price {
+      color: #643b18;
+      font-family: "Poppins", sans-serif;
+      font-size: 80%;
+      font-weight: 600;
+      margin-right: 5px;
+    }
+  }
+
+  .establishment-price__button {
+    height: 60%;
+  }
+}
