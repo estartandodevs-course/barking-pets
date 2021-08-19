@@ -1,0 +1,16 @@
+.backtop {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .backtop__text {
+    color: #643b18;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-shadow: 3px 2px 3.5px rgba(0, 0, 0, 0.452);
+  }
+
+  .backtop__image {
+    height: 100%;
+  }
+}
