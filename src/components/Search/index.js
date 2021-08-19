@@ -1,23 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { SearchIcon } from "../../assets/icons/index";
+import { getAllBusinessFiltered } from "../../services/business";
 import { AutoComplete } from "../AutoComplete";
 import "./styles.scss";
 
-export const Search = ({ suggestions, classSearch = "" }) => {
+export const Search = ({ classSearch = "", filter }) => {
   const [userInput, setUserInput] = useState("");
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
 
-  function matches(local) {
-    return local.toLowerCase().includes(userInput.toLowerCase());
-  }
-
   useEffect(() => {
-    setFilteredSuggestions(() => {
-      return suggestions.filter(({ municipio, uf }) => {
-        return matches(`${uf} - ${municipio} `);
-      });
-    });
+    const filteredResults = getAllBusinessFiltered(filter, userInput);
+    setFilteredSuggestions(filteredResults);
   }, [userInput]);
 
   function onChangeHandle(event) {

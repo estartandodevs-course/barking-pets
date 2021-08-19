@@ -17,7 +17,11 @@ const SearchResults = () => {
       <h3 className={S.searchTitle}>
         {filter ? `Opções para ${filter}` : "  "}
       </h3>
-      <C.Search classSearch={S.SearchBar} suggestions={states} />
+      <C.Search
+        classSearch={S.SearchBar}
+        suggestions={states}
+        filter={filter}
+      />
       <C.Filter filter={filter} setFilter={setFilter} />
       <div className={S.searchTotal}>
         <p className={S.searchTotalText}>
