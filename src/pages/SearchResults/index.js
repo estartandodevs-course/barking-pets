@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import * as C from "../../components/index";
 import { patinhaBrown, pontoBrown } from "../../assets/icons";
-import { allBusiness } from "../../services/api";
+
 import * as S from "./search.module.scss";
+import { FilteredBusinessContext } from "../../contexts/index";
 import { states } from "../../services/mockLocations";
 
 const SearchResults = () => {
   const [filter, setFilter] = useState("");
-
+  const context = useContext(FilteredBusinessContext);
+  const { filteredSuggestions } = context;
   return (
     <>
       <C.Header />
@@ -25,13 +27,12 @@ const SearchResults = () => {
       <C.Filter filter={filter} setFilter={setFilter} />
       <div className={S.searchTotal}>
         <p className={S.searchTotalText}>
-          Resultados da pesquisa:
-          {allBusiness.length}
+          {`Resultados da pesquisa: ${filteredSuggestions.length}`}
         </p>
       </div>
       <div className={S.searchContainer}>
         <div className={S.searchTotalCard}>
-          {allBusiness.map(({ id, name, image, nota, valor }) => {
+          {filteredSuggestions.map(({ id, name, image, nota, valor }) => {
             return (
               <C.CardHotel
                 styles={{
@@ -74,7 +75,7 @@ const SearchResults = () => {
       <C.Pagination />
       <p className={S.searchTotalText}>
         1-10 de
-        {allBusiness.length}
+        {filteredSuggestions.length}
         resultados
       </p>
       <C.Footer classFooter={S.searchFooter} />
