@@ -17,3 +17,30 @@
     top: 30px;
   }
 }
+
+.menu-desktop__sair {
+  height: 40px;
+  position: relative;
+  left: 80px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.menu-open {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 40px;
+  left: 80px;
+}
+
+.menu-mobile {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #9c612f;
+  text-decoration: none;
+  text-align: end;
+  min-width: 100px;
+  padding-bottom: 20px;
+}
