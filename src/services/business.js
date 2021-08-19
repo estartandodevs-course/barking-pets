@@ -14,9 +14,9 @@ export const getAllBusinessFiltered = (category, query) => {
       })
     : allBusiness;
   const filteredByQuery = filteredByCategory.filter((item) => {
-    const location = `${item.uf} ${item.municipio}`;
+    const location = `${item.uf} - ${item.municipio}`;
     return location.toLowerCase().includes(query.toLowerCase());
   });
-  console.log(category, query);
+
   return filteredByQuery;
 };
