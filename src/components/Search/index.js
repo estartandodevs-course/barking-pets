@@ -1,18 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { SearchIcon } from "../../assets/icons/index";
 import { getAllBusinessFiltered } from "../../services/business";
 import { AutoComplete } from "../AutoComplete";
+import { FilteredBusinessContext } from "../../contexts/index";
 import "./styles.scss";
 
 export const Search = ({ classSearch = "", filter }) => {
   const [userInput, setUserInput] = useState("");
-  const [filteredSuggestions, setFilteredSuggestions] = useState([]);
+
   const [showSuggestions, setShowSuggestions] = useState(false);
+
+  const context = useContext(FilteredBusinessContext);
+  const { filteredSuggestions, setFilteredSuggestions } = context;
 
   useEffect(() => {
     const filteredResults = getAllBusinessFiltered(filter, userInput);
     setFilteredSuggestions(filteredResults);
-  }, [userInput]);
+  }, [userInput, filter]);
 
   function onChangeHandle(event) {
     setUserInput(event.target.value);
