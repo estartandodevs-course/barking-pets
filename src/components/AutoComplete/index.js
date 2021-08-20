@@ -30,7 +30,7 @@ export function AutoComplete({
                   alt=""
                   className="autocomplete__suggestion--coracao"
                 />
-                {`${uf} - ${municipio} `}
+                {`${uf} - ${municipio}`}
               </li>
             );
           })}

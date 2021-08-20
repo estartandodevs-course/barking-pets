@@ -33,7 +33,7 @@ const HotelDescription = () => {
           </div>
           <h1>{business.name}</h1>
           <p>{business.nota}</p>
-          <EstablishmentPrice />
+          <EstablishmentPrice price={business.price} />
           <BackTop />
         </main>
       )}
