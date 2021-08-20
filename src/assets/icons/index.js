@@ -12,6 +12,7 @@ import FilterIcon2 from "./filter-icon2.png";
 import patinhaBrown from "./patinhaBrown.svg";
 import pontoBrown from "./pontoBrown.svg";
 import SairIcon from "./sair.svg";
+import backTop from "./backTop.svg";
 
 export {
   FacebookIcon,
@@ -28,4 +29,5 @@ export {
   patinhaBrown,
   pontoBrown,
   SairIcon,
+  backTop,
 };
