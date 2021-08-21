@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
 import * as C from "../../components/index";
+import { PatinhaBlack, Ponto } from "../../assets/icons";
 import { cards, allBusiness } from "../../services/api";
 import { states } from "../../services/mockLocations";
+
 import "./styles.scss";
+import * as S from "./home.module.scss";
 
 const Home = () => {
   return (
@@ -16,7 +20,7 @@ const Home = () => {
       </div>
       <C.Search suggestions={states} />
       <section id="cards-hoteis" className="card-overflow">
-        <div className="title-section">
+        <div className={S.titleSection}>
           <p className="title-section--text">Hotéis mais avaliados</p>
           <div className="title-section--line" />
         </div>
@@ -24,14 +28,33 @@ const Home = () => {
         <div className="card-section">
           {allBusiness.map(({ id, name, image, nota }) => {
             return (
-              <C.CardHotel key={id} id={id} name={name} image={image} nota={nota} />
+              <C.CardHotel key={id} image={image}>
+                <div className={S.footerContainer}>
+                  <div className={S.titleContainer}>
+                    <p className={S.hotelTitle}>{name}</p>
+
+                    <img
+                      className={S.simbolsHome}
+                      src={PatinhaBlack}
+                      alt="patinha"
+                    />
+                    <img src={Ponto} alt="ponto" />
+                    <p className={S.hotelGrade}>{nota}</p>
+                  </div>
+                  <Link
+                    to={`/description_hotel/${id}`}
+                    className="card__footer--link"
+                  >
+                    Saiba mais...
+                  </Link>
+                </div>
+              </C.CardHotel>
             );
           })}
         </div>
       </section>
-
       <section id="cards-animais" className="card-overflow">
-        <div className="title-section">
+        <div className={S.titleSection}>
           <p className="title-section--text">Veja nossas dicas</p>
           <div className="title-section--line" />
         </div>

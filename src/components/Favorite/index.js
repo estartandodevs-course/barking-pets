@@ -4,7 +4,7 @@ import Favoritar from "../../assets/icons/favoritar.svg";
 import Favoritado from "../../assets/icons/favoritado.svg";
 import "./styles.scss";
 
-export function Favorite() {
+export function Favorite({ classFavorite = "" }) {
   const [focus, setFocus] = useState(true);
   function changeImage() {
     setFocus(!focus);
@@ -12,7 +12,7 @@ export function Favorite() {
   return (
     <img
       onClick={changeImage}
-      className="Favorite"
+      className={`favorite ${classFavorite}`}
       src={focus ? Favoritar : Favoritado}
       alt="favoritar"
     />

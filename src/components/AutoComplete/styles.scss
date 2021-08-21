@@ -1,3 +1,5 @@
+@import "../../styles/global.scss";
+
 .autocomplete__suggestion {
   display: flex;
   flex-direction: column;
@@ -11,6 +13,7 @@
   animation-name: slidein;
   box-shadow: rgba(0, 0, 0, 0.226) 3px 5px 10px;
   border-radius: 20px;
+  z-index: $search-index;
   @keyframes slidein {
     0% {
       top: 40%;

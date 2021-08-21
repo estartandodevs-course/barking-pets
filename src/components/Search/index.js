@@ -1,24 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { SearchIcon } from "../../assets/icons/index";
+import { getAllBusinessFiltered } from "../../services/business";
 import { AutoComplete } from "../AutoComplete";
+import { FilteredBusinessContext } from "../../contexts/index";
 import "./styles.scss";
 
-export const Search = ({ suggestions }) => {
+export const Search = ({ classSearch = "", filter }) => {
   const [userInput, setUserInput] = useState("");
-  const [filteredSuggestions, setFilteredSuggestions] = useState([]);
+
   const [showSuggestions, setShowSuggestions] = useState(false);
 
-  function matches(local) {
-    return local.toLowerCase().includes(userInput.toLowerCase());
-  }
+  const context = useContext(FilteredBusinessContext);
+  const { filteredSuggestions, setFilteredSuggestions } = context;
 
   useEffect(() => {
-    setFilteredSuggestions(() => {
-      return suggestions.filter(({ municipio, uf }) => {
-        return matches(`${uf} - ${municipio} `);
-      });
-    });
-  }, [userInput]);
+    const filteredResults = getAllBusinessFiltered(filter, userInput);
+    setFilteredSuggestions(filteredResults);
+  }, [userInput, filter]);
 
   function onChangeHandle(event) {
     setUserInput(event.target.value);
@@ -27,7 +25,7 @@ export const Search = ({ suggestions }) => {
 
   return (
     <div className="search">
-      <form className="search__form">
+      <form className={`${classSearch} search__form`}>
         <input
           type="text"
           name="input"

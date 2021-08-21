@@ -1,32 +1,9 @@
 @import "../../styles/global.scss";
 
-@media (min-width: 768px) {
+@media (min-width: $break-point) {
   .card-section {
     justify-content: space-between;
     width: 100%;
-  }
-}
-
-.title-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 25px 0px;
-
-  .title-section--text {
-    color: #643b18;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    margin: 1px 0px;
-  }
-
-  .title-section--line {
-    display: flex;
-    flex-direction: column;
-    height: 1px;
-    width: 100%;
-    background-color: #d6955877;
   }
 }
 
@@ -50,92 +27,9 @@
     border-radius: 20px;
     border: 3px solid rgba(255, 166, 0, 0);
   }
-
-  @media (max-width: 768px) {
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-  .card {
-    @include centerInColumn();
-    border-radius: 20px;
-    background-color: #fbf8e0;
-    box-shadow: rgba(0, 0, 0, 0.226) 3px 5px 10px;
-
-    .card__footer {
-      display: flex;
-      gap: 10px;
-
-      .card__footer--text {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding-left: 2px;
-        text-align: left;
-        color: #000000;
-        font-size: 0.7rem;
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-
-        .card__footer--link {
-          color: #643b18dc;
-          font-family: "Poppins", sans-serif;
-          font-weight: 400;
-          font-size: 10px;
-          text-decoration: none;
-        }
-      }
-
-      .card__footer--patinha-black-and-nota {
-        display: flex;
-        align-items: center;
-        max-height: 15px;
-        color: #000000;
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        font-size: 0.8rem;
-        gap: 3px;
-      }
-    }
-  }
-
-  .card__footer--animais {
-    height: 3rem;
-
-    .card__footer--text--animais {
-      @include centerX-Y;
-      text-align: center;
-      color: #643b18;
-      font-size: 0.7rem;
-      font-family: "Poppins", sans-serif;
-      font-weight: 400;
-    }
-  }
 }
 
-.home-description {
-  @include column();
-  color: #503117;
-  font-size: 1rem;
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  text-shadow: rgba(0, 0, 0, 0.329) 1px 4px 5px;
-  margin-top: 80px;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: center;
-    & p:first-child::after {
-      content: "  ";
-      width: 2px;
-      display: -webkit-inline-box;
-    }
-  }
-}
-
-.card-overflow {
-  overflow: hidden;
+.card__image--hoteis {
+  width: 250px;
+  height: 230px;
 }

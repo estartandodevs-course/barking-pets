@@ -1,9 +1,11 @@
+@import "../../styles/global.scss";
+
 .menu {
   width: 100%;
   position: relative;
   display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: $break-point) {
     display: none;
   }
   .menu--hamburguer {
@@ -14,4 +16,40 @@
     right: 20px;
     top: 30px;
   }
+}
+
+.menu-desktop__sair {
+  height: 40px;
+  position: relative;
+  left: 124px;
+  top: 15px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.menu-open {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 1;
+  background-color: white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 0px 2.54px 11.3099px rgba(156, 97, 47, 0.25);
+  border: rgba(156, 97, 47, 0.25) 1px solid;
+}
+
+.menu-mobile {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #9c612f;
+  text-decoration: none;
+  text-align: end;
+  min-width: 100px;
+  padding-bottom: 20px;
 }
