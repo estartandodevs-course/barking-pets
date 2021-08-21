@@ -12,7 +12,7 @@ export function Favorite({ classFavorite = "" }) {
   return (
     <img
       onClick={changeImage}
-      className={`Favorite ${classFavorite}`}
+      className={`favorite ${classFavorite}`}
       src={focus ? Favoritar : Favoritado}
       alt="favoritar"
     />
