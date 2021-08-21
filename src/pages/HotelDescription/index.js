@@ -45,29 +45,39 @@ const HotelDescription = () => {
           </div>
           <p className={S.hotelPrice}>{business.price}</p>
           <div className={S.locationContainer}>
-            <img src={locationHeartBrown} alt="simbolo de localização marrom" />
+            <img
+              className={S.locationHeart}
+              src={locationHeartBrown}
+              alt="simbolo de localização marrom"
+            />
             <p>{business.endereco}</p>
           </div>
-          <p>{business.pais}</p>
-          <p className={S.descriptionInfos}>Informações do hotel:</p>
-          <p>{business.descricao}</p>
-          <p className={S.descriptionInfos}>Comodidades:</p>
-          <ul>
-            {business.comodidades.map((comodidade) => {
-              return (
-                <li>
-                  <img src={patinhaBrown} alt="patinha marron" />
-                  <span>{comodidade}</span>
-                </li>
-              );
-            })}
-          </ul>
-          <p className={S.descriptionInfos}>Avaliações:</p>
+          <p className={S.locationCountry}>{business.pais}</p>
+          <div className={S.infoContainer}>
+            <p className={S.descriptionInfos}>Informações do hotel:</p>
+            <p>{business.descricao}</p>
+            <p className={S.descriptionInfos}>Comodidades:</p>
+            <ul className={S.commodityList}>
+              {business.comodidades.map((comodidade) => {
+                return (
+                  <li>
+                    <img src={patinhaBrown} alt="patinha marron" />
+                    <span className={S.commodityItem}>{comodidade}</span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
           <C.EstablishmentPrice price={business.price} />
-          <C.PublishedComment text="testando" blur />
-          <a className={S.hotelPublicationsLinks}>
-            Clique aqui para ter acesso as publicações
-          </a>
+          <div className={S.linkDescriptionContainer}>
+            <p className={S.descriptionInfos}>Avaliações:</p>
+            <C.PublishedComment text="testando" blur />
+          </div>
+          <div className={S.linkDescription}>
+            <a className={S.hotelPublicationsLinks}>
+              Clique aqui para ter acesso as publicações
+            </a>
+          </div>
           <C.Comment bussiness={business.name} />
           <C.BackTop />
           <C.Footer />

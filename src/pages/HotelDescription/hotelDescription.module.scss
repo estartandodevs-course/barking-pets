@@ -24,12 +24,14 @@
   display: flex;
   width: 85px;
   justify-content: space-around;
+  margin-left: 10px;
 }
 
 .hotelName {
   font-size: 20px;
   font-family: $font-family;
   font-weight: bold;
+  padding-left: 15px;
 }
 
 .hotelGrade {
@@ -43,11 +45,36 @@
   font-size: 16px;
   font-weight: 600;
   color: #643b18;
+  margin-bottom: 10px;
+  margin-left: 14px;
 }
 
 .locationContainer {
   display: flex;
   align-items: center;
+  margin-left: 10px;
+}
+
+.locationHeart {
+  position: relative;
+  top: 10px;
+}
+.locationCountry {
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
+.infoContainer {
+  margin-left: 15px;
+  margin-bottom: 50px;
+}
+
+.commodityList {
+  list-style: none;
+}
+
+.commodityItem {
+  margin-left: 10px;
 }
 
 .descriptionInfos {
@@ -56,6 +83,17 @@
   font-weight: bold;
   color: #643b18;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+  margin-top: 45px;
+}
+
+.linkDescriptionContainer {
+  margin-left: 15px;
+}
+
+.linkDescription {
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 .hotelPublicationsLinks {
@@ -67,4 +105,5 @@
   color: #643b18;
   text-decoration: underline;
   cursor: pointer;
+  margin: 0 30px 0 40px;
 }
