@@ -14,6 +14,7 @@ import pontoBrown from "./pontoBrown.svg";
 import SairIcon from "./sair.svg";
 import backTop from "./backTop.svg";
 import PatinhaDisable from "./patinha-disable.png";
+import locationHeartBrown from "./location-coracao--brown.svg";
 
 export {
   FacebookIcon,
@@ -32,4 +33,5 @@ export {
   pontoBrown,
   SairIcon,
   backTop,
+  locationHeartBrown,
 };
