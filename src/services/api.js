@@ -2,6 +2,8 @@ import * as I from "../assets/img";
 import * as H from "../assets/img/hoteis";
 import { filterTypes } from "../components/Filter";
 
+const pais = "Brasil";
+
 export const cards = [
   {
     id: 1,
@@ -64,6 +66,10 @@ export const allBusiness = [
     ],
     uf: "RJ",
     municipio: "Rio de Janeiro",
+    endereco: "Rua José Martins Pereira Filho 23",
+    pais,
+    descricao:
+      "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
   },
   {
     id: 2,
@@ -74,6 +80,10 @@ export const allBusiness = [
     categoria: [filterTypes.HOT_FRIENDLY, filterTypes.REST_PET],
     uf: "RJ",
     municipio: "Rio Bonito",
+    endereco: "Rua Doutor Francisco de Souza 187",
+    pais,
+    descricao:
+      "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
   },
   {
     id: 3,
@@ -84,6 +94,10 @@ export const allBusiness = [
     categoria: [filterTypes.HOT_PET, filterTypes.CLIN_VET],
     uf: "RJ",
     municipio: "Seropédica",
+    endereco: "Rua Oito 9",
+    pais,
+    descricao:
+      "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
   },
   {
     id: 4,
@@ -94,6 +108,10 @@ export const allBusiness = [
     categoria: [filterTypes.HOT_PET, filterTypes.PET_PARK],
     uf: "RJ",
     municipio: "Itaboraí",
+    endereco: "Avenida Virgínia Paula dos Santos Alves 179",
+    pais,
+    descricao:
+      "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
   },
   {
     id: 5,
@@ -104,6 +122,10 @@ export const allBusiness = [
     categoria: [filterTypes.HOT_FRIENDLY],
     uf: "RJ",
     municipio: "Guapimirim",
+    endereco: "Rua Dona Del Carmem 89",
+    pais,
+    descricao:
+      "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
   },
   {
     id: 6,
@@ -119,6 +141,10 @@ export const allBusiness = [
     ],
     uf: "RJ",
     municipio: "Duque de Caxias",
+    endereco: "Rua Costa Paes 34",
+    pais,
+    descricao:
+      "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
   },
   {
     id: 7,
@@ -133,6 +159,10 @@ export const allBusiness = [
     ],
     uf: "RJ",
     municipio: "Cabo Frio",
+    endereco: "Avenida Caminho de Búzios 45",
+    pais,
+    descricao:
+      "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
   },
   {
     id: 8,
@@ -143,6 +173,10 @@ export const allBusiness = [
     categoria: [filterTypes.HOT_FRIENDLY, filterTypes.PET_PARK],
     uf: "RJ",
     municipio: "Campos dos Goytacazes",
+    endereco: "Rua Professor Castro 90",
+    pais,
+    descricao:
+      "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
   },
   {
     id: 9,
@@ -157,6 +191,10 @@ export const allBusiness = [
     ],
     uf: "RJ",
     municipio: "Cabo Frio",
+    endereco: "Rua Suíça 66",
+    pais,
+    descricao:
+      "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
   },
   {
     id: 10,
@@ -167,58 +205,10 @@ export const allBusiness = [
     categoria: [filterTypes.HOT_FRIENDLY],
     uf: "RJ",
     municipio: "Angra dos Reis",
+    endereco: "Rua Paulo Sodré da Nóbrega 93",
+    pais,
+
+    descricao:
+      "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
   },
 ];
-
-// export const County = [
-//   {
-//     id: 1,
-//     uf: "RJ",
-//     municipio: "Angra dos Reis",
-//   },
-//   {
-//     id: 2,
-//     uf: "RJ",
-//     municipio: "Cabo Frio",
-//   },
-//   {
-//     id: 3,
-//     uf: "RJ",
-//     municipio: "Campos dos Goytacazes",
-//   },
-//   {
-//     id: 4,
-//     uf: "RJ",
-//     municipio: "Duque de Caxias",
-//   },
-//   {
-//     id: 5,
-//     uf: "RJ",
-//     municipio: "Guapimirim",
-//   },
-//   {
-//     id: 6,
-//     uf: "RJ",
-//     municipio: "Itaboraí",
-//   },
-//   {
-//     id: 7,
-//     uf: "RJ",
-//     municipio: "Seropédica",
-//   },
-//   {
-//     id: 8,
-//     uf: "RJ",
-//     municipio: "Rio de Janeiro",
-//   },
-//   {
-//     id: 9,
-//     uf: "RJ",
-//     municipio: "Rio Bonito",
-//   },
-//   {
-//     id: 10,
-//     uf: "RJ",
-//     municipio: "Teresópolis",
-//   },
-// ];
