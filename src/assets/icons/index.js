@@ -4,8 +4,6 @@ import FacebookIcon from "./facebook-icon.svg";
 import InstagramIcon from "./instagram-icon.svg";
 import PatinhaBlack from "./patinhaBlack.svg";
 import Ponto from "./ponto.svg";
-import PatinhaAvaliar from "./PatinhaAvaliar.svg";
-import PatinhaAvaliado from "./PatinhaAvaliado.svg";
 import locationHeart from "./location-coracao.svg";
 import Favoritar from "./favoritar.svg";
 import Favoritado from "./favoritado.svg";
@@ -15,6 +13,7 @@ import patinhaBrown from "./patinhaBrown.svg";
 import pontoBrown from "./pontoBrown.svg";
 import SairIcon from "./sair.svg";
 import backTop from "./backTop.svg";
+import PatinhaDisable from "./patinha-disable.png";
 
 export {
   FacebookIcon,
@@ -24,8 +23,7 @@ export {
   MenuIcon,
   PatinhaBlack,
   Ponto,
-  PatinhaAvaliar,
-  PatinhaAvaliado,
+  PatinhaDisable,
   Favoritar,
   Favoritado,
   FilterIcon,
