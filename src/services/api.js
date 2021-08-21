@@ -70,6 +70,14 @@ export const allBusiness = [
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
+    comodidades: [
+      "Cama casal",
+      "Ar condicionado",
+      "Serviço de limpeza",
+      "Frigobar",
+      "Internet",
+      "Aceitamos Pets",
+    ],
   },
   {
     id: 2,
@@ -84,6 +92,14 @@ export const allBusiness = [
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
+    comodidades: [
+      "Cama casal",
+      "Ar condicionado",
+      "Serviço de limpeza",
+      "Frigobar",
+      "Internet",
+      "Aceitamos Pets",
+    ],
   },
   {
     id: 3,
@@ -98,6 +114,14 @@ export const allBusiness = [
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
+    comodidades: [
+      "Cama casal",
+      "Ar condicionado",
+      "Serviço de limpeza",
+      "Frigobar",
+      "Internet",
+      "Aceitamos Pets",
+    ],
   },
   {
     id: 4,
@@ -112,6 +136,14 @@ export const allBusiness = [
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
+    comodidades: [
+      "Cama casal",
+      "Ar condicionado",
+      "Serviço de limpeza",
+      "Frigobar",
+      "Internet",
+      "Aceitamos Pets",
+    ],
   },
   {
     id: 5,
@@ -126,6 +158,14 @@ export const allBusiness = [
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
+    comodidades: [
+      "Cama casal",
+      "Ar condicionado",
+      "Serviço de limpeza",
+      "Frigobar",
+      "Internet",
+      "Aceitamos Pets",
+    ],
   },
   {
     id: 6,
@@ -145,6 +185,14 @@ export const allBusiness = [
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
+    comodidades: [
+      "Cama casal",
+      "Ar condicionado",
+      "Serviço de limpeza",
+      "Frigobar",
+      "Internet",
+      "Aceitamos Pets",
+    ],
   },
   {
     id: 7,
@@ -163,6 +211,14 @@ export const allBusiness = [
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
+    comodidades: [
+      "Cama casal",
+      "Ar condicionado",
+      "Serviço de limpeza",
+      "Frigobar",
+      "Internet",
+      "Aceitamos Pets",
+    ],
   },
   {
     id: 8,
@@ -177,6 +233,14 @@ export const allBusiness = [
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
+    comodidades: [
+      "Cama casal",
+      "Ar condicionado",
+      "Serviço de limpeza",
+      "Frigobar",
+      "Internet",
+      "Aceitamos Pets",
+    ],
   },
   {
     id: 9,
@@ -195,6 +259,14 @@ export const allBusiness = [
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
+    comodidades: [
+      "Cama casal",
+      "Ar condicionado",
+      "Serviço de limpeza",
+      "Frigobar",
+      "Internet",
+      "Aceitamos Pets",
+    ],
   },
   {
     id: 10,
@@ -210,5 +282,14 @@ export const allBusiness = [
 
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
+
+    comodidades: [
+      "Cama casal",
+      "Ar condicionado",
+      "Serviço de limpeza",
+      "Frigobar",
+      "Internet",
+      "Aceitamos Pets",
+    ],
   },
 ];
