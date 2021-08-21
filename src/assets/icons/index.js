@@ -13,6 +13,7 @@ import patinhaBrown from "./patinhaBrown.svg";
 import pontoBrown from "./pontoBrown.svg";
 import SairIcon from "./sair.svg";
 import backTop from "./backTop.svg";
+import PatinhaDisable from "./patinha-disable.png";
 
 export {
   FacebookIcon,
@@ -22,6 +23,7 @@ export {
   MenuIcon,
   PatinhaBlack,
   Ponto,
+  PatinhaDisable,
   Favoritar,
   Favoritado,
   FilterIcon,

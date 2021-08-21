@@ -53,7 +53,6 @@ const Home = () => {
           })}
         </div>
       </section>
-
       <section id="cards-animais" className="card-overflow">
         <div className={S.titleSection}>
           <p className="title-section--text">Veja nossas dicas</p>
