@@ -44,11 +44,7 @@ const SearchResults = () => {
                   paw: S.cardPaw,
                 }}
                 key={id}
-                name={name}
                 image={image}
-                nota={nota}
-                valor={valor}
-                classFooter={S.searchFooter}
               >
                 <p className={S.cardText}>{name}</p>
                 <div className={S.searchNota}>
