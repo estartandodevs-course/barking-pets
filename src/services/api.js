@@ -88,7 +88,7 @@ export const allBusiness = [
     categoria: [filterTypes.HOT_FRIENDLY, filterTypes.REST_PET],
     uf: "RJ",
     municipio: "Rio Bonito",
-    endereco: "Rua Doutor Francisco de Souza 187,",
+    endereco: "Rua Doutor Francisco de Souza 187 ",
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
