@@ -1,0 +1,56 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 350px;
+
+  .comment--text {
+    width: 283px;
+    height: 60px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    color: #643b18;
+  }
+  .comment--container {
+    height: 107px;
+    width: 374px;
+    border-radius: 25px;
+    background: #ffffff;
+    border: 3.48396px solid rgba(118, 118, 118, 0.15);
+    box-sizing: border-box;
+    box-shadow: 0px 13.9358px 20.9037px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+  }
+
+  .comment--icon {
+    display: flex;
+    width: 24px;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+.button {
+  height: 46px;
+  width: 150px;
+  background: #d69558;
+  border-radius: 15.2174px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.comment--boton {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

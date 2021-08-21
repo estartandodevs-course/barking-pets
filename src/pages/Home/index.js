@@ -5,6 +5,7 @@ import "./styles.scss";
 const Home = () => {
   return (
     <>
+      <C.Comment />
       <C.Header />
       <C.MenuDesktop />
       <C.Menu />
@@ -28,7 +29,6 @@ const Home = () => {
           })}
         </div>
       </section>
-
       <section id="cards-animais" className="card-overflow">
         <div className="title-section">
           <p className="title-section--text">Veja nossas dicas</p>

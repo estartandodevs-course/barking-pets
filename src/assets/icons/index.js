@@ -4,6 +4,8 @@ import FacebookIcon from "./facebook-icon.svg";
 import InstagramIcon from "./instagram-icon.svg";
 import PatinhaBlack from "./patinhaBlack.svg";
 import Ponto from "./ponto.svg";
+import PatinhaAvaliar from "./PatinhaAvaliar.svg";
+import PatinhaAvaliado from "./PatinhaAvaliado.svg";
 
 export {
   FacebookIcon,
@@ -12,4 +14,6 @@ export {
   MenuIcon,
   PatinhaBlack,
   Ponto,
+  PatinhaAvaliar,
+  PatinhaAvaliado,
 };
