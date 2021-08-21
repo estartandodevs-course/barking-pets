@@ -10,7 +10,7 @@ import * as S from "./home.module.scss";
 const Home = () => {
   return (
     <>
-      <C.Comment />
+      <C.Comment bussiness="Mi casita" />
       <C.Header />
       <C.MenuDesktop />
       <C.Menu />
