@@ -1,0 +1,57 @@
+@import "../../styles/global.scss";
+
+.filter {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border-bottom: $primary-color 0.5px dashed;
+  border-top: $primary-color 0.5px dashed;
+  box-shadow: 0px 2.54px 11.3099px rgba(156, 97, 47, 0.25);
+
+  @media (max-width: $break-point) {
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
+  &__text {
+    font-family: $font-family;
+    font-weight: 700;
+    color: $primary-color;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    @media (max-width: $break-point) {
+      padding: 20px;
+    }
+
+    &::after {
+      content: "";
+      width: 20px;
+      height: 3px;
+      border-radius: 200px;
+      background-color: #503117;
+      display: block;
+      margin: auto;
+      transition: width 0.5s ease;
+    }
+    &--selected::after {
+      width: 80%;
+    }
+  }
+}
+
+summary {
+  display: none;
+
+  @media (max-width: $break-point) {
+    display: block;
+  }
+}
+
+.filter--icon {
+  width: 30px;
+  height: auto;
+  position: relative;
+  left: 20px;
+}

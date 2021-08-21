@@ -4,17 +4,18 @@
   width: 100%;
   margin-bottom: 50px;
   @include centerInColumn();
+  position: relative;
 
   .search__form {
     @include centerX-Y();
-    width: 85%;
+
     height: 50px;
     background-color: white;
     border-radius: 15px;
     border: rgba(211, 211, 211, 0.575) solid 0.5px;
     box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.295);
 
-    @media (min-width: 768px) {
+    @media (min-width: $break-point) {
       width: 40%;
     }
 

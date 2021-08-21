@@ -1,0 +1,15 @@
+.button-component {
+  background-color: #9c612f;
+  color: #ffffff;
+  width: 120px;
+  height: 41px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 65%;
+
+  @media (min-width: 768px) {
+    box-shadow: rgba(0, 0, 0, 0.288) 2px 3px 5px;
+  }
+}

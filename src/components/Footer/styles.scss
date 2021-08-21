@@ -1,3 +1,5 @@
+@import "../../styles/global.scss";
+
 .footer {
   background-color: #c0afa0;
   width: 100%;
@@ -33,7 +35,7 @@
     align-items: center;
     flex-direction: column;
 
-    @media (min-width: 768px) {
+    @media (min-width: $break-point) {
       margin-left: auto;
       margin-right: 20px;
     }
@@ -58,7 +60,7 @@
   &__icons--petlogo {
     margin-right: 10px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $break-point) {
       margin-right: 50px;
     }
   }

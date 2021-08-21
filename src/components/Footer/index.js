@@ -2,10 +2,10 @@ import "./styles.scss";
 import * as I from "../../assets/icons";
 import Petlogo from "../../assets/img/pet-footer.svg";
 
-export function Footer() {
+export function Footer({ classFooter = "" }) {
   return (
     <>
-      <footer className="footer">
+      <footer className={`footer ${classFooter}`}>
         <div className="footer__text--left">
           <p className="footer__text">Entrar em contato</p>
           <p className="footer__text--email">Barkingpets@hotmail.com</p>

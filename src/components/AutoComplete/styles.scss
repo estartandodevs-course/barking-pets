@@ -1,0 +1,81 @@
+@import "../../styles/global.scss";
+
+.autocomplete__suggestion {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 50%;
+  margin-top: 5px;
+  background-color: #ffff;
+  position: absolute;
+  top: 100%;
+  animation-duration: 0.1s;
+  animation-name: slidein;
+  box-shadow: rgba(0, 0, 0, 0.226) 3px 5px 10px;
+  border-radius: 20px;
+  z-index: $search-index;
+  @keyframes slidein {
+    0% {
+      top: 40%;
+    }
+
+    to {
+      top: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 80%;
+    width: 80%;
+  }
+
+  .autocomplete__suggestion--box-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    color: #767676;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 90%;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.2s;
+      font-size: 95%;
+
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 100%;
+    }
+
+    .autocomplete__suggestion--coracao {
+      width: 20px;
+    }
+  }
+}
+
+.autocomplete__erro {
+  position: absolute;
+  color: rgb(138, 1, 1);
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 100%;
+  top: 100%;
+  margin-top: 5px;
+  animation-duration: 0.1s;
+  animation-name: slidein;
+  @keyframes slidein {
+    0% {
+      top: 40%;
+    }
+
+    to {
+      top: 100%;
+    }
+  }
+}
