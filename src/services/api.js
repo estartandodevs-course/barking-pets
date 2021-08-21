@@ -66,7 +66,7 @@ export const allBusiness = [
     ],
     uf: "RJ",
     municipio: "Rio de Janeiro",
-    endereco: "Rua José Martins Pereira Filho 23",
+    endereco: "Rua José Martins Pereira Filho 23,",
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
@@ -88,7 +88,7 @@ export const allBusiness = [
     categoria: [filterTypes.HOT_FRIENDLY, filterTypes.REST_PET],
     uf: "RJ",
     municipio: "Rio Bonito",
-    endereco: "Rua Doutor Francisco de Souza 187",
+    endereco: "Rua Doutor Francisco de Souza 187,",
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
@@ -110,7 +110,7 @@ export const allBusiness = [
     categoria: [filterTypes.HOT_PET, filterTypes.CLIN_VET],
     uf: "RJ",
     municipio: "Seropédica",
-    endereco: "Rua Oito 9",
+    endereco: "Rua Oito 9,",
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
@@ -132,7 +132,7 @@ export const allBusiness = [
     categoria: [filterTypes.HOT_PET, filterTypes.PET_PARK],
     uf: "RJ",
     municipio: "Itaboraí",
-    endereco: "Avenida Virgínia Paula dos Santos Alves 179",
+    endereco: "Avenida Virgínia Paula dos Santos Alves 179,",
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
@@ -154,7 +154,7 @@ export const allBusiness = [
     categoria: [filterTypes.HOT_FRIENDLY],
     uf: "RJ",
     municipio: "Guapimirim",
-    endereco: "Rua Dona Del Carmem 89",
+    endereco: "Rua Dona Del Carmem 89,",
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
@@ -181,7 +181,7 @@ export const allBusiness = [
     ],
     uf: "RJ",
     municipio: "Duque de Caxias",
-    endereco: "Rua Costa Paes 34",
+    endereco: "Rua Costa Paes 34,",
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
@@ -207,7 +207,7 @@ export const allBusiness = [
     ],
     uf: "RJ",
     municipio: "Cabo Frio",
-    endereco: "Avenida Caminho de Búzios 45",
+    endereco: "Avenida Caminho de Búzios 45,",
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
@@ -229,7 +229,7 @@ export const allBusiness = [
     categoria: [filterTypes.HOT_FRIENDLY, filterTypes.PET_PARK],
     uf: "RJ",
     municipio: "Campos dos Goytacazes",
-    endereco: "Rua Professor Castro 90",
+    endereco: "Rua Professor Castro 90,",
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
@@ -255,7 +255,7 @@ export const allBusiness = [
     ],
     uf: "RJ",
     municipio: "Cabo Frio",
-    endereco: "Rua Suíça 66",
+    endereco: "Rua Suíça 66,",
     pais,
     descricao:
       "Fusce finibus sit amet enim sit amet sagittis. Proin placerat non urna id tempus. Phasellus sit amet ultricies justo. Fusce vel enim congue, scelerisque sapien eu, sodales lectus. Duis congue tincidunt laoreet. Duis nec massa porta, eleifend nisl non, aliquam mi. Sed sed ligula a lacus posuere vehicula a vitae lorem. Proin vulputate urna sit amet nunc porttitor rhoncus. Vivamus condimentum dignissim dolor ut aliquam. Nulla cursus gravida porta. Aliquam erat volutpat. In congue elit nulla, nec pulvinar mauris aliquam non. Nulla a nisi vestibulum, hendrerit nulla ut, interdum justo. Mauris ut ipsum semper turpis rhoncus finibus. Donec sit amet augue in turpis vehicula sodales ultrices at dolor. Fusce aliquet purus felis, eu cursus neque vehicula eu.",
@@ -277,7 +277,7 @@ export const allBusiness = [
     categoria: [filterTypes.HOT_FRIENDLY],
     uf: "RJ",
     municipio: "Angra dos Reis",
-    endereco: "Rua Paulo Sodré da Nóbrega 93",
+    endereco: "Rua Paulo Sodré da Nóbrega 93,",
     pais,
 
     descricao:
