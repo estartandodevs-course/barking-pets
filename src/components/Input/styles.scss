@@ -1,0 +1,26 @@
+@import "../../styles/global.scss";
+
+.input-component {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .input-component__label {
+    font-family: $font-family;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 5px;
+  }
+
+  .input-component__input {
+    border-radius: 20px;
+    padding: 12px 15px;
+    outline: none;
+    border: 2px solid rgba(118, 118, 118, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.226) 3px 5px 10px;
+
+    &::placeholder {
+      font-family: $font-family;
+    }
+  }
+}
