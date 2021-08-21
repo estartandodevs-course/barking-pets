@@ -1,12 +1,15 @@
 import React from "react";
-import { Formulario } from "../../components";
+import { Input } from "../../components";
 
 const Login = () => {
   return (
     <>
-      <Formulario type="email" placeholder="contato@exemplo.com">
+      <Input type="email" placeholder="contato@exemplo.com" name="email">
         E-mail
-      </Formulario>
+      </Input>
+      <Input type="password" placeholder="contato@exemplo.com" name="senha">
+        Senha
+      </Input>
     </>
   );
 };

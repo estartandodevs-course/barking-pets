@@ -13,4 +13,4 @@ export { Favorite } from "./Favorite";
 export { Button } from "./Button";
 export { EstablishmentPrice } from "./EstablishmentPrice";
 export { BackTop } from "./BackTop";
-export { Formulario } from "./Formulario";
+export { Input } from "./Input/index";
