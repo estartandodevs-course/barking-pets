@@ -54,7 +54,7 @@ export const allBusiness = [
   {
     id: 1,
     name: "Belmond Copacabana",
-    image: H.hotel1,
+    images: [H.hotel1, H.hotel11, H.hotel12, H.hotel13, H.hotel14, H.hotel15],
     nota: "5.0",
     price: "R$ 1559,00",
     categoria: [
@@ -82,7 +82,7 @@ export const allBusiness = [
   {
     id: 2,
     name: "Ibbis Copacabana",
-    image: H.hotel2,
+    images: [H.hotel2, H.hotel11, H.hotel12, H.hotel13, H.hotel14, H.hotel15],
     nota: "4,7",
     price: "R$ 203,00",
     categoria: [filterTypes.HOT_FRIENDLY, filterTypes.REST_PET],
@@ -104,7 +104,7 @@ export const allBusiness = [
   {
     id: 3,
     name: "L'Homme de Rio...",
-    image: H.hotel3,
+    images: [H.hotel3, H.hotel11, H.hotel12, H.hotel13, H.hotel14, H.hotel15],
     nota: "3,9",
     price: "R$ 440,00",
     categoria: [filterTypes.HOT_PET, filterTypes.CLIN_VET],
@@ -126,7 +126,7 @@ export const allBusiness = [
   {
     id: 4,
     name: "Selina Copacabana",
-    image: H.hotel4,
+    images: [H.hotel4, H.hotel11, H.hotel12, H.hotel13, H.hotel14, H.hotel15],
     nota: "3,7",
     price: "R$ 120,00",
     categoria: [filterTypes.HOT_PET, filterTypes.PET_PARK],
@@ -148,7 +148,7 @@ export const allBusiness = [
   {
     id: 5,
     name: "Ritz Leblon ",
-    image: H.hotel5,
+    images: [H.hotel5, H.hotel11, H.hotel12, H.hotel13, H.hotel14, H.hotel15],
     nota: "3,5",
     price: "R$ 581,00",
     categoria: [filterTypes.HOT_FRIENDLY],
@@ -170,7 +170,7 @@ export const allBusiness = [
   {
     id: 6,
     name: "Mirasol Copacabana",
-    image: H.hotel6,
+    images: [H.hotel6, H.hotel11, H.hotel12, H.hotel13, H.hotel14, H.hotel15],
     nota: "3,5",
     price: "R$ 231,00",
     categoria: [
@@ -197,7 +197,7 @@ export const allBusiness = [
   {
     id: 7,
     name: "Promenade Palladium",
-    image: H.hotel7,
+    images: [H.hotel7, H.hotel11, H.hotel12, H.hotel13, H.hotel14, H.hotel15],
     nota: "3,5",
     price: "R$ 604,00",
     categoria: [
@@ -223,7 +223,7 @@ export const allBusiness = [
   {
     id: 8,
     name: "Miramar Hotel",
-    image: H.hotel8,
+    images: [H.hotel8, H.hotel11, H.hotel12, H.hotel13, H.hotel14, H.hotel15],
     nota: "3,5",
     price: "R$ 540,00",
     categoria: [filterTypes.HOT_FRIENDLY, filterTypes.PET_PARK],
@@ -245,7 +245,7 @@ export const allBusiness = [
   {
     id: 9,
     name: "Americas Copacabana",
-    image: H.hotel9,
+    images: [H.hotel9, H.hotel11, H.hotel12, H.hotel13, H.hotel14, H.hotel15],
     nota: "3,3",
     price: "R$ 187,00",
     categoria: [
@@ -271,7 +271,7 @@ export const allBusiness = [
   {
     id: 10,
     name: "Real Palace Hotel",
-    image: H.hotel10,
+    images: [H.hotel10, H.hotel11, H.hotel12, H.hotel13, H.hotel14, H.hotel15],
     nota: "3,3",
     price: "R$ 174,00",
     categoria: [filterTypes.HOT_FRIENDLY],
