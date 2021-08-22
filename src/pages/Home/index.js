@@ -2,11 +2,9 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 // import { useState } from "react";
 import { Link } from "react-router-dom";
-import Carousel from "react-elastic-carousel";
 
 import * as C from "../../components/index";
 import { PatinhaBlack, Ponto } from "../../assets/icons";
-import * as H from "../../assets/img/hoteis";
 
 import { cards, allBusiness } from "../../services/api";
 
@@ -18,18 +16,6 @@ import * as S from "./home.module.scss";
 const Home = () => {
   return (
     <>
-      <Carousel
-        renderArrow={({ type, onClick }) => {
-          return <div onClick={onClick}>{type === "PREV" ? "<" : ">"}</div>;
-        }}
-        pagination={false}
-        enableAutoPlay
-      >
-        <img src={H.hotel11} alt="" />
-        <img src={H.hotel12} alt="" />
-        <img src={H.hotel13} alt="" />
-        <img src={H.hotel14} alt="" />
-      </Carousel>
       <C.Header />
       <C.MenuDesktop />
       <C.Menu />
