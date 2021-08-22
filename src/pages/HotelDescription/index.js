@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import {
   SairIcon,
   patinhaBrown,
@@ -35,9 +35,11 @@ const HotelDescription = () => {
               alt={business.name}
               className={S.hotelDescriptionImageHotel}
             />
+          </div>
+          <div className={S.favoriteContainer}>
+            <p className={S.hotelName}>{business.name}</p>
             <C.Favorite classFavorite={S.favoriteDescription} />
           </div>
-          <p className={S.hotelName}>{business.name}</p>
           <div className={S.gradeContainer}>
             <img src={patinhaBrown} alt="Patinha" className={S.pawBrown} />
             <img src={pontoBrown} alt="ponto" className={S.pontoBrown} />
@@ -73,11 +75,12 @@ const HotelDescription = () => {
             <p className={S.descriptionInfos}>Avaliações:</p>
             <C.PublishedComment text="testando" blur />
           </div>
-          <div className={S.linkDescription}>
-            <a className={S.hotelPublicationsLinks}>
-              Clique aqui para ter acesso as publicações
-            </a>
-          </div>
+
+          <span className={S.linkDescription}>
+            <Link to="/entrar">Clique aqui</Link>
+            {" para ter acesso as publicações"}
+          </span>
+
           <C.Comment bussiness={business.name} />
           <C.BackTop />
           <C.Footer />
