@@ -1,5 +1,8 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import Carousel from "react-elastic-carousel";
 import {
   SairIcon,
   patinhaBrown,
@@ -22,55 +25,74 @@ const HotelDescription = () => {
 
   return (
     <section className={S.hotelDescription}>
+      <C.Header headerClass={S.headerMobile} />
+      <C.MenuDesktop />
       {business && (
         <main key={business.id}>
           <div className={S.hotelDescriptionImages}>
+            <Carousel pagination={false} enableAutoPlay>
+              {business.images.map((image) => {
+                return (
+                  <img
+                    src={image}
+                    alt="fotos hotel"
+                    className={S.hotelDescriptionImageHotel}
+                  />
+                );
+              })}
+            </Carousel>
             <img
               src={SairIcon}
               alt="Sair"
               className={S.hotelDescriptionImageSair}
             />
-            <img
-              src={business.image}
-              alt={business.name}
-              className={S.hotelDescriptionImageHotel}
-            />
           </div>
-          <div className={S.favoriteContainer}>
-            <p className={S.hotelName}>{business.name}</p>
-            <C.Favorite classFavorite={S.favoriteDescription} />
+          <div className={S.containerFirstInfos}>
+            <div className={S.favoriteContainer}>
+              <p className={S.hotelName}>{business.name}</p>
+              <C.Favorite classFavorite={S.favoriteDescription} />
+            </div>
+            <div className={S.containerSecondInfos}>
+              <div className={S.gradeContainer}>
+                <img src={patinhaBrown} alt="Patinha" className={S.pawBrown} />
+                <img src={pontoBrown} alt="ponto" className={S.pontoBrown} />
+                <p className={S.hotelGrade}>{business.nota}</p>
+              </div>
+              <p className={S.hotelPrice}>{business.price}</p>
+              <div className={S.locationContainer}>
+                <img
+                  className={S.locationHeart}
+                  src={locationHeartBrown}
+                  alt="simbolo de localização marrom"
+                />
+                <p>{`${business.endereco} ${business.pais} `}</p>
+              </div>
+            </div>
           </div>
-          <div className={S.gradeContainer}>
-            <img src={patinhaBrown} alt="Patinha" className={S.pawBrown} />
-            <img src={pontoBrown} alt="ponto" className={S.pontoBrown} />
-            <p className={S.hotelGrade}>{business.nota}</p>
+          <div className={S.containerThirdInfos}>
+            <div className={S.infoContainer}>
+              <p className={S.descriptionInfos}>Informações do hotel:</p>
+              <p>{business.descricao}</p>
+            </div>
+            <div className={S.commodityListContainer}>
+              <p className={S.descriptionInfos}>Comodidades:</p>
+              <ul className={S.commodityList}>
+                {business.comodidades.map((comodidade) => {
+                  return (
+                    <li>
+                      <img src={patinhaBrown} alt="patinha marron" />
+                      <span className={S.commodityItem}>{comodidade}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
-          <p className={S.hotelPrice}>{business.price}</p>
-          <div className={S.locationContainer}>
-            <img
-              className={S.locationHeart}
-              src={locationHeartBrown}
-              alt="simbolo de localização marrom"
-            />
-            <p>{business.endereco}</p>
-          </div>
-          <p className={S.locationCountry}>{business.pais}</p>
-          <div className={S.infoContainer}>
-            <p className={S.descriptionInfos}>Informações do hotel:</p>
-            <p>{business.descricao}</p>
-            <p className={S.descriptionInfos}>Comodidades:</p>
-            <ul className={S.commodityList}>
-              {business.comodidades.map((comodidade) => {
-                return (
-                  <li>
-                    <img src={patinhaBrown} alt="patinha marron" />
-                    <span className={S.commodityItem}>{comodidade}</span>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-          <C.EstablishmentPrice price={business.price} />
+
+          <C.EstablishmentPrice
+            price={business.price}
+            establishmentClass={S.establishmentClass}
+          />
           <div className={S.linkDescriptionContainer}>
             <p className={S.descriptionInfos}>Avaliações:</p>
             <C.PublishedComment text="testando" blur />
