@@ -1,5 +1,8 @@
 @import "../../styles/global.scss";
 
+@media (max-width: $break-point) {
+}
+
 .hotelDescriptionImages {
   display: flex;
   position: relative;
@@ -11,7 +14,6 @@
 }
 .hotelDescriptionImageHotel {
   width: 100%;
-  border-radius: 0px;
 }
 
 .favoriteContainer {
@@ -60,10 +62,6 @@
   margin-left: 10px;
 }
 
-.locationHeart {
-  position: relative;
-  top: 10px;
-}
 .locationCountry {
   margin-left: 40px;
   margin-bottom: 30px;
@@ -72,10 +70,13 @@
 .infoContainer {
   margin-left: 15px;
   margin-bottom: 50px;
+  padding-right: 10px;
+  margin-right: 5px;
 }
 
 .commodityList {
   list-style: none;
+  margin-bottom: 50px;
 }
 
 .commodityItem {
