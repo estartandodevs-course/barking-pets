@@ -7,13 +7,62 @@
   display: flex;
   position: relative;
 }
+
+.headerMobile {
+  display: block;
+  @media (max-width: $break-point) {
+    display: none;
+  }
+}
+
 .hotelDescriptionImageSair {
-  position: absolute;
-  top: 15px;
-  left: 15px;
+  display: none;
+  @media (max-width: $break-point) {
+    position: absolute;
+    top: 7px;
+    left: 68px;
+    height: 30px;
+  }
 }
 .hotelDescriptionImageHotel {
-  width: 100%;
+  margin-top: 50px;
+  width: 500px;
+  @media (max-width: $break-point) {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+.containerFirstInfos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: $break-point) {
+    display: block;
+  }
+}
+.containerSecondInfos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @media (max-width: $break-point) {
+    display: block;
+    text-align: left;
+  }
+}
+
+.containerThirdInfos {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  @media (max-width: $break-point) {
+    display: block;
+  }
 }
 
 .favoriteContainer {
@@ -52,8 +101,14 @@
   font-size: 16px;
   font-weight: 600;
   color: #643b18;
-  margin-bottom: 10px;
-  margin-left: 14px;
+
+  @media (max-width: $break-point) {
+    font-size: 16px;
+    font-weight: 600;
+    color: #643b18;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
 }
 
 .locationContainer {
@@ -84,17 +139,44 @@
 }
 
 .descriptionInfos {
-  font-size: 15px;
+  font-size: 20px;
   font-family: $font-family;
   font-weight: bold;
   color: #643b18;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 10px;
   margin-top: 45px;
+  text-align: justify;
+}
+
+.commodityListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  width: 800px;
+
+  @media (max-width: $break-point) {
+    display: block;
+  }
+}
+
+.establishmentClass {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: $break-point) {
+    width: 100%;
+  }
 }
 
 .linkDescriptionContainer {
-  margin-left: 15px;
+  margin-left: 40px;
+  @media (max-width: $break-point) {
+    margin-left: 15px;
+  }
 }
 
 .linkDescription {
