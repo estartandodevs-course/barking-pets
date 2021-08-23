@@ -1,5 +1,5 @@
-import { Link, useParams, useLocation } from "react-router-dom";
-import { useState, useContext } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useState, useContext, useEffect } from "react";
 import * as C from "../../components/index";
 import { patinhaBrown, pontoBrown } from "../../assets/icons";
 
@@ -8,16 +8,18 @@ import { FilteredBusinessContext } from "../../contexts/index";
 import { states } from "../../services/mockLocations";
 
 const SearchResults = () => {
-  const search = useLocation().search();
-  const nameParams = new URLSearchParams(search);
-  console.log(nameParams);
-
+  const [userInput, setUserInput] = useState("");
   const [filter, setFilter] = useState("");
-  const { municipio } = useParams();
-  const resultsParams = JSON.stringify(municipio);
-  console.log(resultsParams);
+  const { search } = useLocation();
+
+  useEffect(() => {
+    const busca = new URLSearchParams(search);
+    setUserInput(busca.get("q"));
+  }, []);
+
   const context = useContext(FilteredBusinessContext);
   const { filteredSuggestions } = context;
+
   return (
     <>
       <C.Header />
@@ -30,6 +32,8 @@ const SearchResults = () => {
         classSearch={S.SearchBar}
         suggestions={states}
         filter={filter}
+        userInput={userInput}
+        setUserInput={setUserInput}
       />
       <C.Filter filter={filter} setFilter={setFilter} />
       <div className={S.searchTotal}>
@@ -51,11 +55,7 @@ const SearchResults = () => {
                   paw: S.cardPaw,
                 }}
                 key={id}
-                name={name}
                 image={image}
-                nota={nota}
-                valor={valor}
-                classFooter={S.searchFooter}
               >
                 <p className={S.cardText}>{name}</p>
                 <div className={S.searchNota}>
