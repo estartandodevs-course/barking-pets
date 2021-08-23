@@ -59,6 +59,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+  gap: 100px;
 
   @media (max-width: $break-point) {
     display: block;
@@ -125,13 +126,17 @@
 .infoContainer {
   margin-left: 15px;
   margin-bottom: 50px;
-  padding-right: 10px;
-  margin-right: 5px;
+  max-width: 446px;
+
+  @media (max-width: $break-point) {
+    margin-right: 15px;
+  }
 }
 
 .commodityList {
   list-style: none;
   margin-bottom: 50px;
+  margin-top: 15px;
 }
 
 .commodityItem {
@@ -154,11 +159,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 50px;
-  width: 800px;
 
   @media (max-width: $break-point) {
     display: block;
+    margin-left: 15px;
   }
 }
 
@@ -168,13 +172,19 @@
   margin-right: auto;
 
   @media (max-width: $break-point) {
-    width: 100%;
+    width: 91%;
+    padding: 10px;
   }
 }
 
 .linkDescriptionContainer {
   margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media (max-width: $break-point) {
+    display: block;
     margin-left: 15px;
   }
 }
