@@ -22,11 +22,14 @@ export function AutoComplete({
             return (
               <li
                 key={id}
-                className="autocomplete__suggestion--box-text"
+                className="autocomplete__suggestion__box-text"
                 onClick={onClick}
                 aria-hidden="true"
               >
-                <Link to={`/resultado_busca/${municipio}`}>
+                <Link
+                  to={`/resultado_busca/?q=${uf} - ${municipio}`}
+                  className="autocomplete__suggestion__box-link"
+                >
                   <img
                     src={locationHeart}
                     alt=""
