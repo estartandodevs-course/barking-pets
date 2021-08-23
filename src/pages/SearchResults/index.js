@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useParams, useLocation } from "react-router-dom";
 import { useState, useContext } from "react";
 import * as C from "../../components/index";
 import { patinhaBrown, pontoBrown } from "../../assets/icons";
@@ -8,7 +8,14 @@ import { FilteredBusinessContext } from "../../contexts/index";
 import { states } from "../../services/mockLocations";
 
 const SearchResults = () => {
+  const search = useLocation().search();
+  const nameParams = new URLSearchParams(search);
+  console.log(nameParams);
+
   const [filter, setFilter] = useState("");
+  const { municipio } = useParams();
+  const resultsParams = JSON.stringify(municipio);
+  console.log(resultsParams);
   const context = useContext(FilteredBusinessContext);
   const { filteredSuggestions } = context;
   return (

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { locationHeart } from "../../assets/icons/index";
 import "./styles.scss";
 
@@ -25,12 +26,14 @@ export function AutoComplete({
                 onClick={onClick}
                 aria-hidden="true"
               >
-                <img
-                  src={locationHeart}
-                  alt=""
-                  className="autocomplete__suggestion--coracao"
-                />
-                {`${uf} - ${municipio}`}
+                <Link to={`/resultado_busca/${municipio}`}>
+                  <img
+                    src={locationHeart}
+                    alt=""
+                    className="autocomplete__suggestion--coracao"
+                  />
+                  {`${uf} - ${municipio}`}
+                </Link>
               </li>
             );
           })}
