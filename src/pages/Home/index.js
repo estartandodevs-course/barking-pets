@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import * as C from "../../components/index";
@@ -13,6 +12,7 @@ import "./styles.scss";
 import * as S from "./home.module.scss";
 
 const Home = () => {
+  const [userInput, setUserInput] = useState("");
   return (
     <>
       <C.Header />
@@ -22,7 +22,11 @@ const Home = () => {
         <p>Seja bem vindo, </p>
         <p> O que vamos fazer hoje?</p>
       </div>
-      <C.Search suggestions={states} />
+      <C.Search
+        suggestions={states}
+        userInput={userInput}
+        setUserInput={setUserInput}
+      />
       <section id="cards-hoteis" className="card-overflow">
         <div className={S.titleSection}>
           <p className="title-section--text">Hotéis mais avaliados</p>

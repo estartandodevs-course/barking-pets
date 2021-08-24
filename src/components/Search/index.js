@@ -5,9 +5,12 @@ import { AutoComplete } from "../AutoComplete";
 import { FilteredBusinessContext } from "../../contexts/index";
 import "./styles.scss";
 
-export const Search = ({ classSearch = "", filter }) => {
-  const [userInput, setUserInput] = useState("");
-
+export const Search = ({
+  classSearch = "",
+  filter,
+  setUserInput,
+  userInput,
+}) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
 
   const context = useContext(FilteredBusinessContext);
