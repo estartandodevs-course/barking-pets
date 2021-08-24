@@ -9,6 +9,7 @@ import pet5 from "./pet5.svg";
 import pet6 from "./pet6.svg";
 import pet7 from "./pet7.svg";
 import pet8 from "./pet8.svg";
+import petLogin from "./petLogin.svg";
 
 export {
   pet1,
@@ -21,4 +22,5 @@ export {
   pet8,
   PatinhaHeader,
   PetFooter,
+  petLogin,
 };
