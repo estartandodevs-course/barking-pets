@@ -1,13 +1,18 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+
 import * as C from "../../components/index";
 import { PatinhaBlack, Ponto } from "../../assets/icons";
+
 import { cards, allBusiness } from "../../services/api";
+
 import { states } from "../../services/mockLocations";
 
 import "./styles.scss";
 import * as S from "./home.module.scss";
 
 const Home = () => {
+  const [userInput, setUserInput] = useState("");
   return (
     <>
       <C.Header />
@@ -15,10 +20,13 @@ const Home = () => {
       <C.Menu />
       <div className="home-description">
         <p>Seja bem vindo, </p>
-
         <p> O que vamos fazer hoje?</p>
       </div>
-      <C.Search suggestions={states} />
+      <C.Search
+        suggestions={states}
+        userInput={userInput}
+        setUserInput={setUserInput}
+      />
       <section id="cards-hoteis" className="card-overflow">
         <div className={S.titleSection}>
           <p className="title-section--text">Hotéis mais avaliados</p>
@@ -26,9 +34,9 @@ const Home = () => {
         </div>
 
         <div className="card-section">
-          {allBusiness.map(({ id, name, image, nota }) => {
+          {allBusiness.map(({ id, name, images, nota }) => {
             return (
-              <C.CardHotel key={id} image={image}>
+              <C.CardHotel key={id} image={images[0]}>
                 <div className={S.footerContainer}>
                   <div className={S.titleContainer}>
                     <p className={S.hotelTitle}>{name}</p>

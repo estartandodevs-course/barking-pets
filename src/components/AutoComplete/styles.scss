@@ -29,28 +29,31 @@
     width: 80%;
   }
 
-  .autocomplete__suggestion--box-text {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  .autocomplete__suggestion__box-text {
     margin: 10px;
-    color: #767676;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 90%;
     cursor: pointer;
     transition: 0.3s;
 
     &:hover {
       transition: 0.2s;
       font-size: 95%;
-
       width: 100%;
       border-radius: 20px;
     }
 
     @media (max-width: 768px) {
       font-size: 100%;
+    }
+
+    .autocomplete__suggestion__box-link {
+      display: flex;
+      align-items: center;
+      color: #767676;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 90%;
+      text-decoration: none;
+      gap: 10px;
     }
 
     .autocomplete__suggestion--coracao {

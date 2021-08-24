@@ -8,6 +8,11 @@ import hotel7 from "./hotel7.png";
 import hotel8 from "./hotel8.png";
 import hotel9 from "./hotel9.png";
 import hotel10 from "./hotel10.png";
+import hotel11 from "./hotel11.png";
+import hotel12 from "./hotel12.png";
+import hotel13 from "./hotel13.png";
+import hotel14 from "./hotel14.png";
+import hotel15 from "./hotel15.png";
 
 export {
   hotel1,
@@ -20,4 +25,9 @@ export {
   hotel8,
   hotel9,
   hotel10,
+  hotel11,
+  hotel12,
+  hotel13,
+  hotel14,
+  hotel15,
 };

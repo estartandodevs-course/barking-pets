@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { useState, useContext } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useState, useContext, useEffect } from "react";
 import * as C from "../../components/index";
 import { patinhaBrown, pontoBrown } from "../../assets/icons";
 
@@ -8,9 +8,18 @@ import { FilteredBusinessContext } from "../../contexts/index";
 import { states } from "../../services/mockLocations";
 
 const SearchResults = () => {
+  const [userInput, setUserInput] = useState("");
   const [filter, setFilter] = useState("");
+  const { search } = useLocation();
+
+  useEffect(() => {
+    const busca = new URLSearchParams(search);
+    setUserInput(busca.get("q"));
+  }, []);
+
   const context = useContext(FilteredBusinessContext);
   const { filteredSuggestions } = context;
+
   return (
     <>
       <C.Header />
@@ -23,6 +32,8 @@ const SearchResults = () => {
         classSearch={S.SearchBar}
         suggestions={states}
         filter={filter}
+        userInput={userInput}
+        setUserInput={setUserInput}
       />
       <C.Filter filter={filter} setFilter={setFilter} />
       <div className={S.searchTotal}>
@@ -32,7 +43,7 @@ const SearchResults = () => {
       </div>
       <div className={S.searchContainer}>
         <div className={S.searchTotalCard}>
-          {filteredSuggestions.map(({ id, name, image, nota, valor }) => {
+          {filteredSuggestions.map(({ id, name, images, nota, valor }) => {
             return (
               <C.CardHotel
                 styles={{
@@ -44,7 +55,8 @@ const SearchResults = () => {
                   paw: S.cardPaw,
                 }}
                 key={id}
-                image={image}
+//                 image={image}
+                image={images[0]}
               >
                 <p className={S.cardText}>{name}</p>
                 <div className={S.searchNota}>
