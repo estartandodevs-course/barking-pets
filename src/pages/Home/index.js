@@ -1,7 +1,12 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { Link } from "react-router-dom";
+
 import * as C from "../../components/index";
 import { PatinhaBlack, Ponto } from "../../assets/icons";
+
 import { cards, allBusiness } from "../../services/api";
+
 import { states } from "../../services/mockLocations";
 
 import "./styles.scss";
@@ -15,7 +20,6 @@ const Home = () => {
       <C.Menu />
       <div className="home-description">
         <p>Seja bem vindo, </p>
-
         <p> O que vamos fazer hoje?</p>
       </div>
       <C.Search suggestions={states} />
@@ -26,9 +30,9 @@ const Home = () => {
         </div>
 
         <div className="card-section">
-          {allBusiness.map(({ id, name, image, nota }) => {
+          {allBusiness.map(({ id, name, images, nota }) => {
             return (
-              <C.CardHotel key={id} image={image}>
+              <C.CardHotel key={id} image={images[0]}>
                 <div className={S.footerContainer}>
                   <div className={S.titleContainer}>
                     <p className={S.hotelTitle}>{name}</p>
