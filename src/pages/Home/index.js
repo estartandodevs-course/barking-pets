@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
 import * as C from "../../components/index";
 import { PatinhaBlack, Ponto } from "../../assets/icons";
+
 import { cards, allBusiness } from "../../services/api";
+
 import { states } from "../../services/mockLocations";
 
 import "./styles.scss";
@@ -17,7 +20,6 @@ const Home = () => {
       <C.Menu />
       <div className="home-description">
         <p>Seja bem vindo, </p>
-
         <p> O que vamos fazer hoje?</p>
       </div>
       <C.Search
@@ -32,9 +34,9 @@ const Home = () => {
         </div>
 
         <div className="card-section">
-          {allBusiness.map(({ id, name, image, nota }) => {
+          {allBusiness.map(({ id, name, images, nota }) => {
             return (
-              <C.CardHotel key={id} image={image}>
+              <C.CardHotel key={id} image={images[0]}>
                 <div className={S.footerContainer}>
                   <div className={S.titleContainer}>
                     <p className={S.hotelTitle}>{name}</p>
@@ -59,7 +61,6 @@ const Home = () => {
           })}
         </div>
       </section>
-
       <section id="cards-animais" className="card-overflow">
         <div className={S.titleSection}>
           <p className="title-section--text">Veja nossas dicas</p>

@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Home, AboutUs, SearchResults, HotelDescription } from "./pages";
+import { Home, AboutUs, SearchResults, HotelDescription, Login } from "./pages";
+
 import { allBusiness } from "./services/api";
 
 export default function Routes() {
@@ -18,6 +19,9 @@ export default function Routes() {
         </Route>
         <Route path="/description_hotel/:id">
           <HotelDescription data={allBusiness} />
+        </Route>
+        <Route path="/entrar">
+          <Login />
         </Route>
       </Switch>
     </BrowserRouter>

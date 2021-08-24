@@ -1,0 +1,34 @@
+@import "../../styles/constants.scss";
+
+.published-comment {
+  display: flex;
+  align-items: center;
+}
+
+.published-comment__person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.published-comment__person--image {
+  width: clamp(90px, 10vw, 140px);
+  height: clamp(90px, 10vw, 140px);
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.published-comment__opinion {
+  max-width: 400px;
+  display: block;
+}
+.published-comment--text {
+  font-size: 14px;
+  font-family: $font-family;
+  color: $secondary-color-1;
+}
+
+.published-comment--blur {
+  filter: blur(5px);
+}

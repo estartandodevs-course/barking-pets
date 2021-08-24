@@ -53,16 +53,21 @@
       width: 260px;
       height: auto;
     }
-    .cardFavorite {
-      height: 50px;
-      right: 10px;
-      top: 10px;
-    }
   }
+}
+.cardFavorite {
+  height: 60px;
+  right: 20px;
+  top: 20px;
 }
 @media (max-width: $break-point) {
   .searchTotalCard {
     grid-template-columns: 1fr;
+  }
+  .cardFavorite {
+    height: 60px;
+    right: 6px;
+    top: 10px;
   }
 }
 

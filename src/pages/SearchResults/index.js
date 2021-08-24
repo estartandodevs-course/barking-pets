@@ -43,7 +43,7 @@ const SearchResults = () => {
       </div>
       <div className={S.searchContainer}>
         <div className={S.searchTotalCard}>
-          {filteredSuggestions.map(({ id, name, image, nota, valor }) => {
+          {filteredSuggestions.map(({ id, name, images, nota, valor }) => {
             return (
               <C.CardHotel
                 styles={{
@@ -55,7 +55,8 @@ const SearchResults = () => {
                   paw: S.cardPaw,
                 }}
                 key={id}
-                image={image}
+//                 image={image}
+                image={images[0]}
               >
                 <p className={S.cardText}>{name}</p>
                 <div className={S.searchNota}>

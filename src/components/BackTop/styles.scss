@@ -1,11 +1,16 @@
+@import "../../styles/global.scss";
+
 .backtop {
   display: flex;
   align-items: center;
   cursor: pointer;
+  justify-content: flex-end;
+  margin-top: 30px;
+  padding-right: 20px;
 
   .backtop__text {
-    color: #643b18;
-    font-family: "Poppins", sans-serif;
+    color: $primary-color;
+    font-family: $font-family;
     font-weight: 400;
     text-shadow: 3px 2px 3.5px rgba(0, 0, 0, 0.452);
   }
