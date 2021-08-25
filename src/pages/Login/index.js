@@ -2,7 +2,7 @@ import React from "react";
 import * as C from "../../components";
 import { petLogin } from "../../assets/img";
 
-import "./styles.scss";
+import * as S from "./login.module.scss";
 
 const Login = () => {
   const options = [
@@ -15,11 +15,12 @@ const Login = () => {
   return (
     <>
       <C.Header />
+      <C.Menu />
       <C.MenuDesktop />
 
-      <div className="login-container">
-        <div className="white-div">
-          <ul className="list-options">
+      <div className={S.loginContainer}>
+        <div className={S.listOptionsContainer}>
+          <ul className={S.listOptions}>
             {" "}
             Mais opções
             {options.map((option) => {
@@ -27,35 +28,35 @@ const Login = () => {
             })}
           </ul>
 
-          <img src={petLogin} alt="pet" className="img-dog" />
+          <img src={petLogin} alt="pet" />
         </div>
-        <div className="yellow-div">
-          <p className="loginText">Bem vindo(a) ao</p>
-          <p className="productName">Barking Pets</p>
-          <div className="inputContainet">
+        <div className={S.infoContainer}>
+          <p className={S.loginText}>Bem vindo(a) ao</p>
+          <p className={S.productName}>Barking Pets</p>
+          <div className={S.inputContainer}>
             <C.Input
               type="email"
               placeholder="contato@exemplo.com"
               name="email"
             >
-              <p className="inputText">E-mail</p>
+              <p className={S.inputText}>E-mail</p>
             </C.Input>
             <C.Input
               type="password"
               placeholder="Utilize letras e números"
               name="senha"
             >
-              <p className="inputText">Senha</p>
+              <p className={S.passwordInput}>Senha</p>
             </C.Input>
-            <C.Button classButton="login-button">
+            <C.Button classButton={S.loginButton}>
               <p>Login</p>
             </C.Button>
-            <p className="forgot-password">Esqueci minha senha</p>
+            <p className={S.forgotPassword}>Esqueci minha senha</p>
           </div>
         </div>
       </div>
 
-      <C.Footer classFooter="loginFooter" />
+      <C.Footer classFooter={S.loginFooter} />
     </>
   );
 };
