@@ -1,108 +1,74 @@
 @import "../../styles/global.scss";
 
-.login {
+.login-container {
+  border: 2px solid red;
   display: flex;
-}
-
-.loginFooter {
-  margin-top: 100px;
-}
-.login-input {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 1082px;
-  width: 614px;
-
-  border-radius: 50px;
-  align-items: center;
   justify-content: center;
-  background: rgba(245, 241, 205, 1);
-}
-.login-img {
-  height: 745px;
-  width: 691px;
-
-  border-radius: 0px;
+  gap: 200px;
+  background-color: #fbf8e0;
+  margin-top: 5px;
 }
 
-.img-dog {
+.yellow-div {
+  border: 2px solid rgb(122, 122, 29);
+  width: 500px;
+  height: 800px;
+  background-color: #f5f1cc;
+  box-shadow: 12px 9px 20px 2px rgba(214, 149, 88, 0.23);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 80px;
 }
 
-.login-text {
-  width: 423px;
-  height: 37px;
-  right: 957px;
-  top: 593px;
-
-  font-family: Poppins;
+.loginText {
+  font-family: $font-family;
   font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 45px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.05em;
-
-  color: #643b18;
-
-  text-shadow: 0px 6.34921px 6.34921px rgba(0, 0, 0, 0.25);
-}
-.login-mais {
-  width: 270px;
-  height: 43px;
-  right: 1110px;
-  top: 361px;
-
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 45px;
-  display: flex;
-  align-items: center;
-
-  color: #000000;
-}
-.input-component {
-  display: flex;
-
-  width: 66%;
-  height: 16%;
-  justify-content: flex-end;
-  align-content: flex-end;
-  flex-wrap: wrap;
-}
-.button-component {
-}
-.login-welcome {
-  width: 287px;
-  left: 941px;
-  top: 391px;
-
-  font-family: Poppins;
   font-weight: 600;
+  font-size: 30px;
   line-height: 45px;
   text-align: center;
   letter-spacing: 0.05em;
-
   color: #503117;
 }
-.login-pets {
-  position: absolute;
-  width: 412.54px;
-  height: 77.15px;
 
+.productName {
   font-family: Bangers;
   font-style: normal;
   font-weight: normal;
-  font-size: 72.502px;
+  font-size: 73px;
   line-height: 77px;
-
   text-align: center;
   letter-spacing: 0.05em;
-
   color: #503117;
-
   text-shadow: 0px 0.241673px 0.241673px rgba(0, 0, 0, 0.25);
+}
+
+.inputText {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 45px;
+  color: #503117;
+}
+
+.white-div {
+  border: 2px solid green;
+}
+
+.list-options {
+  padding: 40px 0 0 40px;
+  list-style: none;
+  font-family: $font-family;
+  font-weight: bold;
+  font-size: 30px;
+  li {
+    color: #643b18;
+    font-weight: normal;
+    text-shadow: 0px 6.34921px 6.34921px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.loginFooter {
+  margin: 0;
 }

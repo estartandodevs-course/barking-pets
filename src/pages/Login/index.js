@@ -5,40 +5,52 @@ import { petLogin } from "../../assets/img";
 import "./styles.scss";
 
 const Login = () => {
+  const options = [
+    "Suporte ao usuário",
+    "FAQ",
+    "Sobre o Barking Pets",
+    "Criar perfil",
+    "Profissional",
+  ];
+
   return (
     <>
       <C.Header />
       <C.MenuDesktop />
 
-      <div className="login">
-        <p className="login-mais">Mais Opções</p>
-        <p className="login-text">
-          Suporte ao usuário FAQ Sobre o Barking Pets Criar perfil Profissional
-        </p>
+      <div className="login-container">
+        <div className="white-div">
+          <ul className="list-options">
+            {" "}
+            Mais opções
+            {options.map((option) => {
+              return <li>{option}</li>;
+            })}
+          </ul>
 
-        <div className="login-img">
           <img src={petLogin} alt="pet" className="img-dog" />
         </div>
-
-        <div className="login-input">
-          <p className="login-welcome">Bem vindo(a) ao</p>
-          <h1 className="login-pets">Barking Pets</h1>
+        <div className="yellow-div">
+          <p className="loginText">Bem vindo(a) ao</p>
+          <p className="productName">Barking Pets</p>
 
           <C.Input type="email" placeholder="contato@exemplo.com" name="email">
-            E-mail
+            <p className="inputText">E-mail</p>
           </C.Input>
           <C.Input
             type="password"
             placeholder="Utilize letras e números"
             name="senha"
           >
-            Senha
+            <p className="inputText">Senha</p>
           </C.Input>
-          <C.Button name="Login" />
+          <C.Button classButton="login-button">
+            <p>Login</p>
+          </C.Button>
         </div>
       </div>
 
-      <C.Footer classname="loginFooter" />
+      <C.Footer classFooter="loginFooter" />
     </>
   );
 };
