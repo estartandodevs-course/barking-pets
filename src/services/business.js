@@ -7,6 +7,10 @@ export const getBusinessById = (id) => {
   return business;
 };
 
+function makeLocationString(business) {
+  return `${business.uf} - ${business.municipio}`;
+}
+
 export const getAllBusinessFiltered = (category, query) => {
   const filteredByCategory = category
     ? allBusiness.filter((item) => {
@@ -14,9 +18,20 @@ export const getAllBusinessFiltered = (category, query) => {
       })
     : allBusiness;
   const filteredByQuery = filteredByCategory.filter((item) => {
-    const location = `${item.uf} - ${item.municipio}`;
+    const location = makeLocationString(item);
     return location.toLowerCase().includes(query?.toLowerCase());
   });
 
   return filteredByQuery;
 };
+
+export function getLocations(category, query) {
+  const filteredBussiness = getAllBusinessFiltered(category, query);
+  const filteredLocations = [];
+  return filteredBussiness.filter((business) => {
+    const locationId = makeLocationString(business);
+    if (filteredLocations.includes(locationId)) return false;
+    filteredLocations.push(locationId);
+    return true;
+  });
+}

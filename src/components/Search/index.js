@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import { SearchIcon } from "../../assets/icons/index";
-import { getAllBusinessFiltered } from "../../services/business";
+import { getLocations } from "../../services/business";
 import { AutoComplete } from "../AutoComplete";
 import { FilteredBusinessContext } from "../../contexts/index";
 import "./styles.scss";
@@ -17,7 +17,7 @@ export const Search = ({
   const { filteredSuggestions, setFilteredSuggestions } = context;
 
   useEffect(() => {
-    const filteredResults = getAllBusinessFiltered(filter, userInput);
+    const filteredResults = getLocations(filter, userInput);
     setFilteredSuggestions(filteredResults);
   }, [userInput, filter]);
 
