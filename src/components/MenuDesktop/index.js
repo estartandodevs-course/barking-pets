@@ -7,7 +7,7 @@ export function MenuDesktop() {
     { title: "Home", path: "/" },
     { title: "Sobre nós", path: "/sobre_nos" },
     { title: "Dicas", path: "/dicas" },
-    { title: "Cadastre-se", path: "/entrar" },
+    { title: "Cadastre-se", path: "/cadastre-se" },
     { title: "Entrar", path: "/entrar" },
   ];
   const { pathname } = useLocation();
