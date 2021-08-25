@@ -30,7 +30,14 @@ const HotelDescription = () => {
       {business && (
         <main key={business.id}>
           <div className={S.hotelDescriptionImages}>
-            <Carousel pagination={false} enableAutoPlay>
+            <Carousel
+              pagination
+              enableAutoPlay
+              disableArrowsOnEnd
+              renderArrow={({}) => {
+                return <div onClick={onclick} />;
+              }}
+            >
               {business.images.map((image) => {
                 return (
                   <img
@@ -79,9 +86,9 @@ const HotelDescription = () => {
               <ul className={S.commodityList}>
                 {business.comodidades.map((comodidade) => {
                   return (
-                    <li>
+                    <li className={S.commodityItem}>
                       <img src={patinhaBrown} alt="patinha marron" />
-                      <span className={S.commodityItem}>{comodidade}</span>
+                      <span>{comodidade}</span>
                     </li>
                   );
                 })}

@@ -25,8 +25,7 @@
   margin-top: 50px;
   width: 500px;
   @media (max-width: $break-point) {
-    margin-top: 0;
-    width: 100%;
+    z-index: -2;
   }
 }
 
@@ -96,9 +95,10 @@
 }
 
 .hotelPrice {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 600;
   color: #643b18;
+  font-family: "Poppins", sans-serif;
 
   @media (max-width: $break-point) {
     font-size: 16px;
@@ -113,6 +113,8 @@
   display: flex;
   align-items: center;
   margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #484848;
 }
 
 .locationCountry {
@@ -124,6 +126,8 @@
   margin-left: 15px;
   margin-bottom: 50px;
   max-width: 446px;
+  font-family: "Poppins", sans-serif;
+  color: #484848;
 
   @media (max-width: $break-point) {
     margin-right: 15px;
@@ -137,7 +141,13 @@
 }
 
 .commodityItem {
-  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #484848;
 }
 
 .descriptionInfos {
@@ -147,7 +157,7 @@
   color: #643b18;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 10px;
-  margin-top: 45px;
+  margin-top: 25px;
   text-align: justify;
 }
 
