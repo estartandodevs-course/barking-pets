@@ -9,8 +9,7 @@ const Login = () => {
     "Suporte ao usuário",
     "FAQ",
     "Sobre o Barking Pets",
-    "Criar perfil",
-    "Profissional",
+    "Criar perfil Profissional",
   ];
 
   return (
@@ -33,20 +32,26 @@ const Login = () => {
         <div className="yellow-div">
           <p className="loginText">Bem vindo(a) ao</p>
           <p className="productName">Barking Pets</p>
-
-          <C.Input type="email" placeholder="contato@exemplo.com" name="email">
-            <p className="inputText">E-mail</p>
-          </C.Input>
-          <C.Input
-            type="password"
-            placeholder="Utilize letras e números"
-            name="senha"
-          >
-            <p className="inputText">Senha</p>
-          </C.Input>
-          <C.Button classButton="login-button">
-            <p>Login</p>
-          </C.Button>
+          <div className="inputContainet">
+            <C.Input
+              type="email"
+              placeholder="contato@exemplo.com"
+              name="email"
+            >
+              <p className="inputText">E-mail</p>
+            </C.Input>
+            <C.Input
+              type="password"
+              placeholder="Utilize letras e números"
+              name="senha"
+            >
+              <p className="inputText">Senha</p>
+            </C.Input>
+            <C.Button classButton="login-button">
+              <p>Login</p>
+            </C.Button>
+            <p className="forgot-password">Esqueci minha senha</p>
+          </div>
         </div>
       </div>
 
