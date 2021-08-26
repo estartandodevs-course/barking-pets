@@ -1,8 +1,7 @@
 @import "../../styles/global.scss";
-
-.hotelDescriptionImages {
-  display: flex;
-  position: relative;
+.hotelDescription {
+  margin: 0;
+  padding: 0;
 }
 
 .headerMobile {
@@ -12,20 +11,42 @@
   }
 }
 
-.hotelDescriptionImageSair {
-  display: none;
+.hotelDescriptionImages {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.carouselArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 400 36px "Poppins", sans-serif;
+  cursor: pointer;
+  padding: 50px;
+
   @media (max-width: $break-point) {
-    position: absolute;
-    top: 7px;
-    left: 68px;
-    height: 30px;
+    display: none;
   }
 }
+
 .hotelDescriptionImageHotel {
-  margin-top: 50px;
-  width: 500px;
+  height: 400px;
   @media (max-width: $break-point) {
-    z-index: -2;
+    flex: 1;
+    margin: 0;
+  }
+}
+
+.hotelDescriptionImageSair {
+  @media (min-width: $break-point) {
+    display: none;
+  }
+  @media (max-width: $break-point) {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 35px;
   }
 }
 
@@ -38,6 +59,24 @@
     display: block;
   }
 }
+
+.favoriteContainer {
+  display: flex;
+  align-items: center;
+}
+
+.hotelName {
+  font-size: 20px;
+  font-family: $font-family;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.favoriteDescription {
+  position: relative;
+  height: 44px;
+}
+
 .containerSecondInfos {
   display: flex;
   justify-content: center;
@@ -49,42 +88,11 @@
   }
 }
 
-.containerThirdInfos {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  gap: 100px;
-
-  @media (max-width: $break-point) {
-    display: block;
-  }
-}
-
-.favoriteContainer {
-  display: flex;
-  align-items: center;
-}
-
-.favoriteDescription {
-  position: relative;
-
-  height: 44px;
-}
-
 .gradeContainer {
   display: flex;
   width: 85px;
   justify-content: space-around;
   margin-left: 10px;
-}
-
-.hotelName {
-  font-size: 20px;
-  font-family: $font-family;
-  font-weight: bold;
-  padding-left: 15px;
 }
 
 .hotelGrade {
@@ -117,9 +125,17 @@
   color: #484848;
 }
 
-.locationCountry {
-  margin-left: 40px;
-  margin-bottom: 30px;
+.containerThirdInfos {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 100px;
+
+  @media (max-width: $break-point) {
+    display: block;
+  }
 }
 
 .infoContainer {
@@ -132,6 +148,29 @@
   @media (max-width: $break-point) {
     margin-right: 15px;
   }
+}
+
+.commodityListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $break-point) {
+    display: block;
+    margin-left: 15px;
+  }
+}
+
+.descriptionInfos {
+  font-size: 20px;
+  font-family: $font-family;
+  font-weight: bold;
+  color: #643b18;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+  margin-top: 25px;
+  text-align: justify;
 }
 
 .commodityList {
@@ -147,30 +186,7 @@
   margin: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  color: #484848;
-}
-
-.descriptionInfos {
-  font-size: 20px;
-  font-family: $font-family;
-  font-weight: bold;
-  color: #643b18;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 10px;
-  margin-top: 25px;
-  text-align: justify;
-}
-
-.commodityListContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @media (max-width: $break-point) {
-    display: block;
-    margin-left: 15px;
-  }
+  color: #030303;
 }
 
 .establishmentClass {
@@ -201,6 +217,7 @@
   margin-bottom: 50px;
   margin-top: 30px;
   color: #643b18;
+  font-family: "Poppins", sans-serif;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   display: block;
@@ -209,6 +226,10 @@
     font-weight: bold;
     color: #643b18;
   }
+}
+
+.linkDescriptionClique {
+  font-weight: 400;
 }
 
 .hotelPublicationsLinks {
