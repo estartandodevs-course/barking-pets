@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { useParams, Link, useHistory } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
 import {
   SairIcon,
@@ -18,10 +18,20 @@ const HotelDescription = () => {
   const { id } = useParams();
   const idInNumber = Number(id);
 
+  const history = useHistory();
+
   useEffect(() => {
     const data = getBusinessById(idInNumber);
     setBusiness(data);
   }, []);
+
+  const carouselRef = useRef();
+
+  const onNextStart = (currentItem, nextItem) => {
+    if (currentItem.index === nextItem.index) {
+      carouselRef.current.goTo(0);
+    }
+  };
 
   return (
     <section className={S.hotelDescription}>
@@ -30,7 +40,22 @@ const HotelDescription = () => {
       {business && (
         <main key={business.id}>
           <div className={S.hotelDescriptionImages}>
-            <Carousel pagination={false} enableAutoPlay>
+            <Carousel
+              pagination={false}
+              enableAutoPlay
+              autoPlaySpeed={5000}
+              transitionMs={1500}
+              onNextStart={onNextStart}
+              ref={carouselRef}
+              disableArrowsOnEnd={false}
+              renderArrow={({ type, onClick }) => {
+                return (
+                  <div className={S.carouselArrow} onClick={onClick}>
+                    {type === "PREV" ? "<" : ">"}
+                  </div>
+                );
+              }}
+            >
               {business.images.map((image) => {
                 return (
                   <img
@@ -45,6 +70,10 @@ const HotelDescription = () => {
               src={SairIcon}
               alt="Sair"
               className={S.hotelDescriptionImageSair}
+              onClick={() => {
+                history.goBack();
+              }}
+              aria-hidden="true"
             />
           </div>
           <div className={S.containerFirstInfos}>
@@ -54,14 +83,13 @@ const HotelDescription = () => {
             </div>
             <div className={S.containerSecondInfos}>
               <div className={S.gradeContainer}>
-                <img src={patinhaBrown} alt="Patinha" className={S.pawBrown} />
-                <img src={pontoBrown} alt="ponto" className={S.pontoBrown} />
+                <img src={patinhaBrown} alt="Patinha" />
+                <img src={pontoBrown} alt="ponto" />
                 <p className={S.hotelGrade}>{business.nota}</p>
               </div>
               <p className={S.hotelPrice}>{business.price}</p>
               <div className={S.locationContainer}>
                 <img
-                  className={S.locationHeart}
                   src={locationHeartBrown}
                   alt="simbolo de localização marrom"
                 />
@@ -79,9 +107,9 @@ const HotelDescription = () => {
               <ul className={S.commodityList}>
                 {business.comodidades.map((comodidade) => {
                   return (
-                    <li>
+                    <li className={S.commodityItem}>
                       <img src={patinhaBrown} alt="patinha marron" />
-                      <span className={S.commodityItem}>{comodidade}</span>
+                      <span>{comodidade}</span>
                     </li>
                   );
                 })}
@@ -99,7 +127,9 @@ const HotelDescription = () => {
           </div>
 
           <span className={S.linkDescription}>
-            <Link to="/entrar">Clique aqui</Link>
+            <Link to="/entrar" className={S.linkDescriptionClique}>
+              Clique aqui
+            </Link>
             {" para ter acesso as publicações"}
           </span>
 
