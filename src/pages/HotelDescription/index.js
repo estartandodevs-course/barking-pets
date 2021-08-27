@@ -12,6 +12,7 @@ import {
 import * as C from "../../components";
 import { getBusinessById } from "../../services/business";
 import * as S from "./hotelDescription.module.scss";
+import { comment1, comment2, comment3 } from "../../assets/img";
 
 const HotelDescription = () => {
   const [business, setBusiness] = useState();
@@ -99,7 +100,9 @@ const HotelDescription = () => {
           </div>
           <div className={S.containerThirdInfos}>
             <div className={S.infoContainer}>
-              <p className={S.descriptionInfos}>Informações do hotel:</p>
+              <p className={S.descriptionInfos}>
+                Informações do Estabelecimento:
+              </p>
               <p>{business.descricao}</p>
             </div>
             <div className={S.commodityListContainer}>
@@ -123,7 +126,24 @@ const HotelDescription = () => {
           />
           <div className={S.linkDescriptionContainer}>
             <p className={S.descriptionInfos}>Avaliações:</p>
-            <C.PublishedComment text="testando" blur />
+            <C.PublishedComment
+              image={comment1}
+              name="Vanessa C."
+              text="Um lugar muito agradavel para você e para seu pet Tive uma experiencia incrivel, funcionarios atenciosos! Tive uma experiencia incrivel, funcionarios atenciosos!"
+              blur
+            />
+            <C.PublishedComment
+              image={comment2}
+              name="Luiz M."
+              text="Tive uma experiencia incrivel, funcionarios atenciosos! voltaria mais vezes"
+              blur
+            />
+            <C.PublishedComment
+              image={comment3}
+              name="Mirla O."
+              text="Tive uma experiencia incrivel, funcionarios atenciosos! Tive uma experiencia incrivel, funcionarios atenciosos!"
+              blur
+            />
           </div>
 
           <span className={S.linkDescription}>
