@@ -13,6 +13,10 @@ import hotel12 from "./hotel12.png";
 import hotel13 from "./hotel13.png";
 import hotel14 from "./hotel14.png";
 import hotel15 from "./hotel15.png";
+import restaurante1 from "./restaurante-pet.png";
+import restaurante2 from "./restaurante-pet2.png";
+import restaurante3 from "./restaurante-pet3.png";
+import restaurante4 from "./restaurante-pet4.png";
 
 export {
   hotel1,
@@ -30,4 +34,8 @@ export {
   hotel13,
   hotel14,
   hotel15,
+  restaurante1,
+  restaurante2,
+  restaurante3,
+  restaurante4,
 };
