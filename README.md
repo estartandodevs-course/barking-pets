@@ -1,8 +1,6 @@
-<h1 align="center">
-  <a href="https://barkingpets.netlify.app/">
+  <a align="center" href="https://barkingpets.netlify.app/">
     Barking Pets
   </a>
-</h1>
 
 O Barking PETs te ajuda no planejamento de viagens com seu PET. 🐱🐶
 Somos uma comunidade exclusiva que facilita a busca por hotéis, restaurantes e clínicas, conectando você a tudo que precisa saber para viajar com seu PET.
