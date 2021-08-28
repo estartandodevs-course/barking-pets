@@ -2,8 +2,6 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Home, AboutUs, SearchResults, HotelDescription, Login } from "./pages";
 
-import { allBusiness } from "./services/api";
-
 export default function Routes() {
   return (
     <BrowserRouter>
@@ -18,7 +16,7 @@ export default function Routes() {
           <SearchResults />
         </Route>
         <Route path="/description_hotel/:id">
-          <HotelDescription data={allBusiness} />
+          <HotelDescription />
         </Route>
         <Route path="/entrar">
           <Login />

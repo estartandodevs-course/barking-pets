@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import { SearchIcon } from "../../assets/icons/index";
-import { getAllBusinessFiltered } from "../../services/business";
+import { getLocations, getAllBusinessFiltered } from "../../services/business";
 import { AutoComplete } from "../AutoComplete";
 import { FilteredBusinessContext } from "../../contexts/index";
 import "./styles.scss";
@@ -13,12 +13,13 @@ export const Search = ({
 }) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
 
-  const context = useContext(FilteredBusinessContext);
-  const { filteredSuggestions, setFilteredSuggestions } = context;
+  const C = useContext(FilteredBusinessContext);
 
   useEffect(() => {
-    const filteredResults = getAllBusinessFiltered(filter, userInput);
-    setFilteredSuggestions(filteredResults);
+    const locations = getLocations(filter, userInput);
+    const suggestions = getAllBusinessFiltered(filter, userInput);
+    C.setFilteredSuggestions(suggestions);
+    C.setFilteredLocations(locations);
   }, [userInput, filter]);
 
   function onChangeHandle(event) {
@@ -37,6 +38,7 @@ export const Search = ({
           className="search__input"
           onChange={onChangeHandle}
           value={userInput}
+          autoComplete="off"
         />
         <img src={SearchIcon} alt="lupa" className="search__form--icon" />
       </form>
@@ -46,7 +48,7 @@ export const Search = ({
         userInput={userInput}
         showSuggestions={showSuggestions}
         setShowSuggestions={setShowSuggestions}
-        filteredSuggestions={filteredSuggestions}
+        filteredSuggestions={C.filteredLocations}
       />
     </div>
   );

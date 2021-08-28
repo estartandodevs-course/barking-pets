@@ -1,0 +1,157 @@
+@import "../../styles/global.scss";
+
+.aboutUs {
+  .tittleSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: left;
+      position: relative;
+      width: 50%;
+      margin: 45px 10px 10px 35px;
+    }
+
+    .tittleSection--text {
+      font-family: "Bangers";
+      font-size: 5.5vw;
+      color: #643b18;
+
+      @media (min-width: 768px) {
+        font-size: 3.5vw;
+      }
+    }
+
+    .tittleSection--iconSair {
+      height: 7vw;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  .aboutUs1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+    .aboutUs1--text {
+      position: absolute;
+      bottom: 5%;
+      width: 89%;
+      font-family: "Poppins", sans-serif;
+      font-size: clamp(1.5vw, 1rem, 5rem);
+      @media (min-width: 768px) {
+        width: 80%;
+      }
+    }
+  }
+
+  .aboutUs2 {
+    margin-top: 30px;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+
+    .aboutUs2--image {
+      position: relative;
+      top: 15px;
+    }
+
+    .aboutUs2__box {
+      width: clamp(50%, 90%, 500px);
+      background-color: #ffd66c;
+      border-radius: 15px;
+
+      .AboutUs2__box--text {
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        font-size: clamp(1.5vw, 1rem, 5rem);
+      }
+    }
+  }
+
+  .aboutUs3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 550px;
+    position: relative;
+
+    .aboutUs3--image {
+      @media (max-width: 768px) {
+        position: absolute;
+        top: 20px;
+        width: 80%;
+      }
+    }
+
+    .aboutUs3--text {
+      position: absolute;
+      width: 89%;
+      font-family: "Poppins", sans-serif;
+      font-size: clamp(1.5vw, 1rem, 5rem);
+      bottom: 5px;
+
+      @media (min-width: 768px) {
+        width: 75%;
+      }
+    }
+  }
+
+  .aboutUs4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+
+    .aboutUs4--image {
+      @media (min-width: 768px) {
+        width: 30%;
+      }
+    }
+  }
+
+  .buttonsAboutUs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .buttonAboutUs--button {
+      width: 200px;
+      height: 60px;
+      font-size: 85%;
+    }
+  }
+
+  .buttonBack {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    @media (min-width: 768px) {
+      display: flex;
+      position: relative;
+      width: 15%;
+      right: 1px;
+      margin-left: 85%;
+    }
+  }
+}

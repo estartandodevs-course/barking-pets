@@ -3,11 +3,12 @@
   color: #ffffff;
   min-width: 120px;
   min-height: 41px;
-  border: none;
+  border: 1px solid rgb(209, 209, 209);
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 65%;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     box-shadow: rgba(0, 0, 0, 0.288) 2px 3px 5px;
