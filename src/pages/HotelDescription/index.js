@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { useParams, Link, useHistory } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
 import {
@@ -13,11 +13,13 @@ import * as C from "../../components";
 import { getBusinessById } from "../../services/business";
 import * as S from "./hotelDescription.module.scss";
 import { comment1, comment2, comment3 } from "../../assets/img";
+import { FilteredBusinessContext } from "../../contexts";
 
 const HotelDescription = () => {
   const [business, setBusiness] = useState();
   const { id } = useParams();
   const idInNumber = Number(id);
+  const { isLogged } = useContext(FilteredBusinessContext);
 
   const history = useHistory();
 
@@ -130,19 +132,19 @@ const HotelDescription = () => {
               image={comment1}
               name="Vanessa C."
               text="Um lugar muito agradavel para você e para seu pet Tive uma experiencia incrivel, funcionarios atenciosos! Tive uma experiencia incrivel, funcionarios atenciosos!"
-              blur
+              blur={!isLogged}
             />
             <C.PublishedComment
               image={comment2}
               name="Luiz M."
               text="Tive uma experiencia incrivel, funcionarios atenciosos! voltaria mais vezes"
-              blur
+              blur={!isLogged}
             />
             <C.PublishedComment
               image={comment3}
               name="Mirla O."
               text="Tive uma experiencia incrivel, funcionarios atenciosos! Tive uma experiencia incrivel, funcionarios atenciosos!"
-              blur
+              blur={!isLogged}
             />
           </div>
 

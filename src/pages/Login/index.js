@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useHistory } from "react-router-dom";
 import * as C from "../../components";
 import { petLogin } from "../../assets/img";
 
 import * as S from "./login.module.scss";
+import { FilteredBusinessContext } from "../../contexts";
 
 const Login = () => {
   const options = [
@@ -11,6 +13,14 @@ const Login = () => {
     "Sobre o Barking Pets",
     "Criar perfil Profissional",
   ];
+
+  const history = useHistory();
+  const { setIsLogged } = useContext(FilteredBusinessContext);
+
+  const onClick = () => {
+    setIsLogged(true);
+    history.goBack();
+  };
 
   return (
     <>
@@ -21,7 +31,6 @@ const Login = () => {
       <div className={S.loginContainer}>
         <div className={S.listOptionsContainer}>
           <ul className={S.listOptions}>
-            {" "}
             Mais opções
             {options.map((option) => {
               return <li>{option}</li>;
@@ -48,7 +57,7 @@ const Login = () => {
             >
               <p className={S.passwordInput}>Senha</p>
             </C.Input>
-            <C.Button classButton={S.loginButton}>
+            <C.Button classButton={S.loginButton} onClick={onClick}>
               <p>Login</p>
             </C.Button>
             <p className={S.forgotPassword}>Esqueci minha senha</p>

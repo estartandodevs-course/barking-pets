@@ -12,7 +12,7 @@ export function Menu() {
     { title: "Home", path: "/" },
     { title: "Sobre nós", path: "/sobre_nos" },
     { title: "Dicas", path: "/dicas" },
-    { title: "Cadastre-se", path: "/entrar" },
+    { title: "Cadastre-se", path: "/cadastrar" },
     { title: "Entrar", path: "/entrar" },
   ];
 
