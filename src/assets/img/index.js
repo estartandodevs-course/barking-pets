@@ -18,7 +18,6 @@ import comment1 from "./comment1.png";
 import comment2 from "./comment2.png";
 import comment3 from "./comment3.png";
 
-
 export {
   pet1,
   pet2,
