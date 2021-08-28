@@ -10,9 +10,14 @@ import pet6 from "./pet6.svg";
 import pet7 from "./pet7.svg";
 import pet8 from "./pet8.svg";
 import petLogin from "./petLogin.svg";
+import AboutUs1 from "./aboutUs1.png";
+import AboutUs2 from "./aboutUs2.png";
+import AboutUs3 from "./aboutUs3.png";
+import AboutUs4 from "./aboutUs4.jpg";
 import comment1 from "./comment1.png";
 import comment2 from "./comment2.png";
 import comment3 from "./comment3.png";
+
 
 export {
   pet1,
@@ -26,6 +31,10 @@ export {
   PatinhaHeader,
   PetFooter,
   petLogin,
+  AboutUs1,
+  AboutUs2,
+  AboutUs3,
+  AboutUs4,
   comment1,
   comment2,
   comment3,
