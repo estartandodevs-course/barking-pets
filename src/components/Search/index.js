@@ -38,6 +38,7 @@ export const Search = ({
           className="search__input"
           onChange={onChangeHandle}
           value={userInput}
+          autoComplete="off"
         />
         <img src={SearchIcon} alt="lupa" className="search__form--icon" />
       </form>
