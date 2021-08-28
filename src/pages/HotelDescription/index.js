@@ -131,19 +131,19 @@ const HotelDescription = () => {
             <C.PublishedComment
               image={comment1}
               name="Vanessa C."
-              text="Um lugar muito agradavel para você e para seu pet Tive uma experiencia incrivel, funcionarios atenciosos! Tive uma experiencia incrivel, funcionarios atenciosos!"
+              text="Um lugar muito agradavel para você e para seu pet, tive uma experiencia incrivel, funcionarios atenciosos!"
               blur={!isLogged}
             />
             <C.PublishedComment
               image={comment2}
               name="Luiz M."
-              text="Tive uma experiencia incrivel, funcionarios atenciosos! voltaria mais vezes"
+              text="As camas são muito confortaveis, meu pequeno adorou também, comidas diferenciadas e um serviço excelente!"
               blur={!isLogged}
             />
             <C.PublishedComment
               image={comment3}
               name="Mirla O."
-              text="Tive uma experiencia incrivel, funcionarios atenciosos! Tive uma experiencia incrivel, funcionarios atenciosos!"
+              text="Eu, meu marido e o Filó ficamos no hotel por 3 dias, foi maravilhoso! Super atenciosos, tanto conosco quanto com o Filó! Super indico para quem tem pets de grande porte! Possuem uma área super legal para os cachorros brincarem e até cuidadores para quando quisermos sair sem o pet!"
               blur={!isLogged}
             />
           </div>
