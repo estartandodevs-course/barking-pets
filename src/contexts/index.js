@@ -5,6 +5,7 @@ export const FilteredBusinessContext = createContext({});
 export function FiltredBusinessProvider({ children }) {
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
   const [filteredLocations, setFilteredLocations] = useState([]);
+  const [isLogged, setIsLogged] = useState(false);
 
   return (
     <FilteredBusinessContext.Provider
@@ -13,6 +14,8 @@ export function FiltredBusinessProvider({ children }) {
         setFilteredSuggestions,
         filteredLocations,
         setFilteredLocations,
+        isLogged,
+        setIsLogged,
       }}
     >
       {children}

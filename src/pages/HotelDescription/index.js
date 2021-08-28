@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { useParams, Link, useHistory } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
 import {
@@ -13,11 +13,13 @@ import * as C from "../../components";
 import { getBusinessById } from "../../services/business";
 import * as S from "./hotelDescription.module.scss";
 import { comment1, comment2, comment3 } from "../../assets/img";
+import { FilteredBusinessContext } from "../../contexts";
 
 const HotelDescription = () => {
   const [business, setBusiness] = useState();
   const { id } = useParams();
   const idInNumber = Number(id);
+  const { isLogged } = useContext(FilteredBusinessContext);
 
   const history = useHistory();
 
@@ -129,20 +131,20 @@ const HotelDescription = () => {
             <C.PublishedComment
               image={comment1}
               name="Vanessa C."
-              text="Um lugar muito agradavel para você e para seu pet Tive uma experiencia incrivel, funcionarios atenciosos! Tive uma experiencia incrivel, funcionarios atenciosos!"
-              blur
+              text="Um lugar muito agradavel para você e para seu pet, tive uma experiencia incrivel, funcionarios atenciosos!"
+              blur={!isLogged}
             />
             <C.PublishedComment
               image={comment2}
               name="Luiz M."
-              text="Tive uma experiencia incrivel, funcionarios atenciosos! voltaria mais vezes"
-              blur
+              text="As camas são muito confortaveis, meu pequeno adorou também, comidas diferenciadas e um serviço excelente!"
+              blur={!isLogged}
             />
             <C.PublishedComment
               image={comment3}
               name="Mirla O."
-              text="Tive uma experiencia incrivel, funcionarios atenciosos! Tive uma experiencia incrivel, funcionarios atenciosos!"
-              blur
+              text="Eu, meu marido e o Filó ficamos no hotel por 3 dias, foi maravilhoso! Super atenciosos, tanto conosco quanto com o Filó! Super indico para quem tem pets de grande porte! Possuem uma área super legal para os cachorros brincarem e até cuidadores para quando quisermos sair sem o pet!"
+              blur={!isLogged}
             />
           </div>
 
