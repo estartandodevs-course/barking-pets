@@ -15,9 +15,9 @@ Somos uma comunidade exclusiva que facilita a busca por hotéis, restaurantes e 
 
 ## Equipe de Desenvolvimento
 
-- [Sergio Junior](https://github.com/ynaraoliveira)
-- [João Pedro](https://github.com/arapujo)
-- [Carlos Henrique](https://github.com/GuilhermeSCunha)
+- [Sergio Junior](https://github.com/sergjun)
+- [João Pedro](https://github.com/joaoprferreira)
+- [Carlos Henrique](https://github.com/henriquedevs)
 
 ## Equipe de Design
 
